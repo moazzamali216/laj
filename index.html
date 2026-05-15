@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TajPak - Home</title>
+  <title>LAJ - Home</title>
   <link rel="Icon" href="./public/images/logo-white.png" type="image/x-icon">
 
   <!-- External CSsS -->
@@ -27,91 +27,183 @@
 </div>
 
 <body class=" bg-gray-50">
-  <!-- Dekstop Menu -->
-  <nav id="navbar" class="hidden lg:block w-full px-16 py-1.5 shadow-md smooth bg-white fixed z-[999] top-0">
+<!-- Desktop Navbar -->
+<!-- Minimal Luxury Navbar -->
+<nav class="hidden lg:block fixed top-5 left-0 w-full z-50">
 
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
+  <!-- Side Gaps -->
+  <div class="max-w-7xl mx-auto px-5">
 
-      <!-- Logo -->
-      <div class="flex items-center">
-        <img loading="lazy" src="./public/images/logo-transparent.png" class="w-28" alt="Logo">
+    <!-- Navbar Container -->
+    <div class="bg-[#f8f7f5]/95 backdrop-blur-md border border-neutral-200 rounded-[26px] ">
+
+      <!-- Top Area -->
+      <div class="flex items-center justify-between px-8 py-2.5 border-b border-neutral-200">
+
+        <!-- Logo -->
+        <a href="./index.html" class="flex items-center">
+
+          <img
+            src="./public/images/logo.png"
+            alt="Logo"
+            class="w-28 object-contain">
+
+        </a>
+
+        <!-- Small Tags -->
+        <div class="flex items-center gap-2">
+
+          <span
+            class="px-4 py-1.5 border border-neutral-300 rounded-lg text-[12px] tracking-wide text-neutral-500 manrope">
+            ISO Certified
+          </span>
+
+          <span
+            class="px-4 py-1.5 border border-neutral-300 rounded-lg text-[12px] tracking-wide text-neutral-500 manrope">
+            Since 2010
+          </span>
+
+        </div>
+
       </div>
 
-      <!-- Center Menu -->
-      <ul class="flex items-center space-x-8 text-sm font-medium">
-        <li><a href="./index.html" class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">Home</a></li>
-        <li><a href="./about.html" class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">About Us</a>
-        </li>
-        <li><a href="./services.html" class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">Services</a>
-        </li>
-        <li class="relative">
-          <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
-            data-dropdown-placement="bottom-start"
-            class="flex items-center justify-between w-full text-gray-700 mons hover:text-blue-600 hover:underline smooth"
-            type="button">
-            Products
-            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
+      <!-- Bottom Menu -->
+      <div class="flex items-center justify-between px-8 py-2.5">
+
+        <!-- Nav Links -->
+        <ul class="flex items-center gap-12 text-[14px] font-medium text-neutral-500 manrope">
+
+          <!-- Active -->
+          <li class="relative">
+
+            <a href="./index.html"
+              class="text-neutral-900">
+              Home
+            </a>
+
+            <span class="absolute left-0 -bottom-2 w-full h-[2px] bg-neutral-900 rounded-full"></span>
+
+          </li>
+
+          <li>
+            <a href="./about.html"
+              class="hover:text-neutral-900 transition duration-300">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="./services.html"
+              class="hover:text-neutral-900 transition duration-300">
+              Services
+            </a>
+          </li>
 
           <!-- Dropdown -->
-          <div id="dropdownProducts" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-xl shadow-lg w-56">
-            <ul class="py-2 text-sm text-gray-700">
+          <li class="relative">
 
-              <li>
-                <a href="./hometextiles.html"
-                  class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
-                  Home Textiles
-                </a>
-              </li>
+            <button
+              id="dropdownProductsButton"
+              data-dropdown-toggle="dropdownProducts"
+              data-dropdown-placement="bottom-start"
+              class="flex manrope  items-center gap-1 hover:text-neutral-900 transition duration-300">
 
-              <li>
-                <a href="./hospital.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
-                  Institutional Textiles
-                </a>
-              </li>
+              Products
 
-              <li>
-                <a href="./healthcare.html"
-                  class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
-                  Healthcare Textiles
-                </a>
-              </li>
+              <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
 
-              <li>
-                <a href="./terrytowels.html"
-                  class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
-                  Bath Linen
-                </a>
-              </li>
+            </button>
 
-              <li>
-                <a href="./apparels.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
-                  Apparels
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="./sustainability.html"
-            class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">Sustainability</a></li>
-        <li><a href="./public/pdfs/tajpak.pdf" download class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">E-Broucher</a></li>
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownProducts"
+              class="hidden absolute top-12 left-0 w-60 bg-white border border-neutral-200 rounded-2xl shadow-lg overflow-hidden">
 
-      </ul>
+              <ul class="py-2 text-[14px] text-neutral-600 manrope">
 
-      <!-- Right Button -->
-      <div>
+                <li>
+                  <a href="./hometextiles.html"
+                    class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                    Home Textiles
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./hospital.html"
+                    class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                    Institutional Textiles
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./healthcare.html"
+                    class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                    Healthcare Textiles
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./terrytowels.html"
+                    class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                    Bath Linen
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./apparels.html"
+                    class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                    Apparels
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </li>
+
+          <li>
+            <a href="./sustainability.html"
+              class="hover:text-neutral-900 transition duration-300">
+              Sustainability
+            </a>
+          </li>
+
+          <li>
+            <a href="./public/pdfs/tajpak.pdf"
+              download
+              class="hover:text-neutral-900 transition duration-300">
+              E-Brochure
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- Contact -->
         <a href="./contact.html"
-          class="bg-[#2e3092] mons text-white px-5 py-4 rounded-full text-sm hover:bg-blue-700 transition">
-          Contact Us
+          class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
+
+          <span class="w-10 h-px bg-neutral-900"></span>
+
+          <span class="text-[14px] uppercase tracking-wide font-medium manrope">
+            Contact Us
+          </span>
+
         </a>
+
       </div>
 
     </div>
 
-  </nav>
+  </div>
 
+</nav>
   <!-- Mobile Menu -->
   <nav class="lg:hidden w-full fixed top-0 z-[999] bg-white shadow-md px-6 py-4 flex items-center justify-between">
 
@@ -131,7 +223,7 @@
 
   <div class="relative">
     <div id="sideMenu"
-      class="fixed mons top-0 right-0 flex  flex-col justify-center h-full w-72 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-[999]">
+      class="fixed manrope top-0 right-0 flex  flex-col justify-center h-full w-72 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-[999]">
 
       <!-- Close button -->
       <div class="flex top-4 right-4 justify-end absolute p-4">
@@ -265,7 +357,7 @@
 
         <!-- Dynamic Subtext -->
         <p id="hero-subtext"
-          class="text-base  text-white/75 mons leading-relaxed mb-10 max-w-xl transition-all duration-700">
+          class="text-base  text-white/75 manrope leading-relaxed mb-10 max-w-xl transition-all duration-700">
           Connecting global buyers with trusted manufacturers through reliable sourcing, quality assurance, and seamless
           execution.
         </p>
@@ -291,11 +383,11 @@
         <!-- CTA -->
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="./about.html"
-            class="bg-[#2e3092] mons text-white px-8 py-3 text-sm hover:bg-blue-700 transition text-center">
+            class="bg-[#2e3092] manrope text-white px-8 py-3 text-sm hover:bg-blue-700 transition text-center">
             Learn More
           </a>
           <a href="./contact.html"
-            class="border border-white/40 px-8 py-3 mons text-sm hover:bg-white hover:text-black transition text-center">
+            class="border border-white/40 px-8 py-3 manrope text-sm hover:bg-white hover:text-black transition text-center">
             Get in Touch
           </a>
         </div>
@@ -348,18 +440,18 @@
       <div class="w-12 h-[2px] bg-[#2e3092] mb-4"></div>
 
       <!-- Subtext -->
-      <p class="text-base text-white/70 mons leading-relaxed mb-8 max-w-xs">
+      <p class="text-base text-white/70 manrope leading-relaxed mb-8 max-w-xs">
         Connecting global buyers with trusted manufacturers through reliable sourcing and seamless execution.
       </p>
 
       <!-- CTAs -->
       <div class="flex flex-col gap-3 w-full ">
         <a href="./about.html"
-          class="bg-[#2e3092] mons text-white w-full py-3 text-sm hover:bg-blue-700 transition text-center">
+          class="bg-[#2e3092] manrope text-white w-full py-3 text-sm hover:bg-blue-700 transition text-center">
           Learn More
         </a>
         <a href="./contact.html"
-          class="border border-white/40 py-3 mons w-full text-sm hover:bg-white hover:text-black transition text-center">
+          class="border border-white/40 py-3 manrope w-full text-sm hover:bg-white hover:text-black transition text-center">
           Get in Touch
         </a>
       </div>
@@ -471,7 +563,7 @@
       <!-- Heading -->
       <div class="mx-auto w-full flex justify-center items-center gap-4">
         <i class="fa-solid animate-right text-sm fa-circle tcolor"></i>
-        <span class="mons text-gray-700 animate-up" data-x="50" data-y="0">OUR STORY</span>
+        <span class="manrope text-gray-700 animate-up" data-x="50" data-y="0">OUR STORY</span>
         <img loading='lazy' src="./public/images/logo-transparent copy.png" class="w-[50px] animate-up" data-x="50"
           data-y="0" alt="">
       </div>
@@ -908,7 +1000,7 @@
         <!-- Item 1 -->
         <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
           <button
-            class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            class="faq-btn manrope flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
             What types of textile products do you offer?
             <span class="faq-icon transition-transform duration-300">+</span>
           </button>
@@ -922,7 +1014,7 @@
         <!-- Item 2 -->
         <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
           <button
-            class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            class="faq-btn manrope flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
             Do you provide custom design services?
             <span class="faq-icon transition-transform duration-300">+</span>
           </button>
@@ -936,7 +1028,7 @@
         <!-- Item 3 -->
         <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
           <button
-            class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            class="faq-btn manrope flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
             What is your minimum order quantity (MOQ)?
             <span class="faq-icon transition-transform duration-300">+</span>
           </button>
@@ -950,7 +1042,7 @@
         <!-- Item 4 -->
         <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
           <button
-            class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            class="faq-btn manrope flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
             Do you ship internationally?
             <span class="faq-icon transition-transform duration-300">+</span>
           </button>
@@ -964,7 +1056,7 @@
         <!-- Item 5 -->
         <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
           <button
-            class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            class="faq-btn manrope flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
             How do you ensure product quality?
             <span class="faq-icon transition-transform duration-300">+</span>
           </button>
@@ -978,7 +1070,7 @@
         <!-- Item 6 -->
         <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
           <button
-            class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+            class="faq-btn manrope flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
             How can I get started with TajPak?
             <span class="faq-icon transition-transform duration-300">+</span>
           </button>
@@ -1030,12 +1122,12 @@
       <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade animate-up">
 
         <a href="#"
-          class="bg-white mons text-[#2e3092] px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-100 transition animate-zoom-in">
+          class="bg-white manrope text-[#2e3092] px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-100 transition animate-zoom-in">
           Get in Touch
         </a>
 
         <a href="#"
-          class="border mons border-white px-8 py-3 rounded-full text-sm font-medium hover:bg-white hover:text-[#2e3092] transition animate-zoom-in">
+          class="border manrope border-white px-8 py-3 rounded-full text-sm font-medium hover:bg-white hover:text-[#2e3092] transition animate-zoom-in">
           View Products
         </a>
 
@@ -1168,7 +1260,7 @@
       </div>
 
     </div>
-    <div class="text-center pb-5 text-sm mons font-light text-gray-400 capitalize">
+    <div class="text-center pb-5 text-sm manrope font-light text-gray-400 capitalize">
 
       Developed By
       <a href="https://wa.me/923224066958" target="_blank" class="text-blue-800 font-semibold hover:underline">
