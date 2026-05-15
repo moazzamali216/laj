@@ -27,137 +27,283 @@
 </div>
 
 <body class=" bg-gray-50">
-<!-- Desktop Navbar -->
-<!-- Minimal Luxury Navbar -->
-<nav class="hidden lg:block fixed top-5 left-0 w-full z-50">
+  <!-- Desktop Navbar -->
+  <!-- Minimal Luxury Navbar -->
+  <nav class="hidden lg:block fixed top-5 left-0 w-full z-50">
 
-  <!-- Side Gaps -->
-  <div class="max-w-7xl mx-auto px-5">
+    <!-- Side Gaps -->
+    <div class="max-w-7xl mx-auto px-5">
 
-    <!-- Navbar Container -->
-    <div class="bg-[#f8f7f5]/95 backdrop-blur-md border border-neutral-200 rounded-[26px] ">
+      <!-- Navbar Container -->
+      <div class="bg-[#f8f7f5]/95 backdrop-blur-md border border-neutral-200 rounded-[26px] ">
 
-      <!-- Top Area -->
-      <div class="flex items-center justify-between px-8 py-2.5 border-b border-neutral-200">
+        <!-- Top Area -->
+        <div class="flex items-center justify-between px-8 py-2.5 border-b border-neutral-200">
 
-        <!-- Logo -->
-        <a href="./index.html" class="flex items-center">
+          <!-- Logo -->
+          <a href="./index.html" class="flex items-center">
 
-          <img
-            src="./public/images/logo.png"
-            alt="Logo"
-            class="w-28 object-contain">
+            <img src="./public/images/logo.png" alt="Logo" class="w-28 object-contain">
 
-        </a>
+          </a>
 
-        <!-- Small Tags -->
-        <div class="flex items-center gap-2">
+          <!-- Small Tags -->
+          <div class="flex items-center gap-2">
 
-          <span
-            class="px-4 py-1.5 border border-neutral-300 rounded-lg text-[12px] tracking-wide text-neutral-500 manrope">
-            ISO Certified
-          </span>
+            <span
+              class="px-4 py-1.5 border border-neutral-300 rounded-lg text-[12px] tracking-wide text-neutral-500 manrope">
+              ISO Certified
+            </span>
 
-          <span
-            class="px-4 py-1.5 border border-neutral-300 rounded-lg text-[12px] tracking-wide text-neutral-500 manrope">
-            Since 2010
-          </span>
+            <span
+              class="px-4 py-1.5 border border-neutral-300 rounded-lg text-[12px] tracking-wide text-neutral-500 manrope">
+              Since 2010
+            </span>
+
+          </div>
+
+        </div>
+
+        <!-- Bottom Menu -->
+        <div class="flex items-center justify-between px-8 py-2.5">
+
+          <!-- Nav Links -->
+          <ul class="flex items-center gap-12 text-[14px] font-medium text-neutral-500 manrope">
+
+            <!-- Active -->
+            <li class="relative">
+
+              <a href="./index.html" class="text-neutral-900">
+                Home
+              </a>
+
+              <span class="absolute left-0 -bottom-2 w-full h-[2px] bg-neutral-900 rounded-full"></span>
+
+            </li>
+
+            <li>
+              <a href="./about.html" class="hover:text-neutral-900 transition duration-300">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="./services.html" class="hover:text-neutral-900 transition duration-300">
+                Services
+              </a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="relative">
+
+              <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+                data-dropdown-placement="bottom-start"
+                class="flex manrope  items-center gap-1 hover:text-neutral-900 transition duration-300">
+
+                Products
+
+                <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+                </svg>
+
+              </button>
+
+              <!-- Dropdown Menu -->
+              <!-- Dropdown Container -->
+              <div id="dropdownProducts"
+                class="hidden absolute top-12 left-0 w-60 bg-white border border-neutral-200 rounded-2xl shadow-lg overflow-hidden">
+                <ul class=" text-[14px] text-neutral-600 manrope">
+                  <li> <a href="./hometextiles.html"
+                      class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition"> Home Textiles </a>
+                  </li>
+                  <li> <a href="./hospital.html"
+                      class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition"> Institutional
+                      Textiles </a> </li>
+                  <li> <a href="./healthcare.html"
+                      class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition"> Healthcare Textiles
+                    </a> </li>
+                  <li> <a href="./terrytowels.html"
+                      class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition"> Bath Linen </a>
+                  </li>
+                  <li> <a href="./apparels.html"
+                      class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition"> Apparels </a> </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="./sustainability.html" class="hover:text-neutral-900 transition duration-300">
+                Sustainability
+              </a>
+            </li>
+
+            <li>
+              <a href="./public/pdfs/tajpak.pdf" download class="hover:text-neutral-900 transition duration-300">
+                E-Brochure
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- Contact -->
+          <a href="./contact.html"
+            class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
+
+            <span class="w-10 h-px bg-neutral-900"></span>
+
+            <span class="text-[14px] uppercase tracking-wide font-medium manrope">
+              Contact Us
+            </span>
+
+          </a>
 
         </div>
 
       </div>
 
-      <!-- Bottom Menu -->
-      <div class="flex items-center justify-between px-8 py-2.5">
+    </div>
 
-        <!-- Nav Links -->
-        <ul class="flex items-center gap-12 text-[14px] font-medium text-neutral-500 manrope">
+  </nav>
 
-          <!-- Active -->
-          <li class="relative">
+  <!-- ========================= -->
+  <!-- Mobile Luxury Navbar -->
+  <!-- ========================= -->
 
-            <a href="./index.html"
-              class="text-neutral-900">
-              Home
-            </a>
+  <!-- Top Navbar -->
+  <nav class="lg:hidden fixed top-4 left-0 w-full z-[999]">
 
-            <span class="absolute left-0 -bottom-2 w-full h-[2px] bg-neutral-900 rounded-full"></span>
+    <div class="px-4">
 
-          </li>
+      <div
+        class="bg-[#f8f7f5]/95 backdrop-blur-md border border-neutral-200 rounded-2xl px-5 py-4 flex items-center justify-between">
 
-          <li>
-            <a href="./about.html"
-              class="hover:text-neutral-900 transition duration-300">
-              About
-            </a>
-          </li>
+        <!-- Logo -->
+        <a href="./index.html">
 
-          <li>
-            <a href="./services.html"
-              class="hover:text-neutral-900 transition duration-300">
-              Services
-            </a>
-          </li>
+          <img loading="lazy" src="./public/images/logo.png" class="w-24 object-contain" alt="Logo">
 
-          <!-- Dropdown -->
-          <li class="relative">
+        </a>
 
-            <button
-              id="dropdownProductsButton"
-              data-dropdown-toggle="dropdownProducts"
-              data-dropdown-placement="bottom-start"
-              class="flex manrope  items-center gap-1 hover:text-neutral-900 transition duration-300">
+        <!-- Menu Button -->
+        <button id="openMenu"
+          class="w-11 h-11 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
 
-              Products
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
-              <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M19 9l-7 7-7-7" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16" />
+
+          </svg>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-[998] opacity-0 transition duration-300">
+  </div>
+
+  <!-- Side Menu -->
+  <div id="sideMenu"
+    class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
+
+      <!-- Logo -->
+      <img src="./public/images/logo.png" class="w-24 object-contain" alt="Logo">
+
+      <!-- Close -->
+      <button id="closeMenu"
+        class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+
+        ✕
+
+      </button>
+
+    </div>
+
+    <!-- Menu Links -->
+    <div class="flex-1 overflow-y-auto px-6 py-8">
+
+      <ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 manrope">
+
+        <li>
+          <a href="./index.html" class="flex items-center justify-between hover:text-neutral-900 transition">
+
+            Home
+
+            <span class="w-8 h-px bg-neutral-900"></span>
+
+          </a>
+        </li>
+
+        <li>
+          <a href="./about.html" class="hover:text-neutral-900 transition block">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="./services.html" class="hover:text-neutral-900 transition block">
+            Services
+          </a>
+        </li>
+
+        <!-- Products -->
+        <li>
+
+          <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
+
+            <!-- Products Heading -->
+            <button id="productToggle"
+              class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
+
+              <span>Products</span>
+
+              <svg id="productArrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M19 9l-7 7-7-7" />
+
               </svg>
 
             </button>
 
-            <!-- Dropdown Menu -->
-            <div
-              id="dropdownProducts"
-              class="hidden absolute top-12 left-0 w-60 bg-white border border-neutral-200 rounded-2xl shadow-lg overflow-hidden">
+            <!-- Dropdown -->
+            <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
 
-              <ul class="py-2 text-[14px] text-neutral-600 manrope">
+              <ul class="space-y-4 text-[14px] text-neutral-600">
 
                 <li>
-                  <a href="./hometextiles.html"
-                    class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                  <a href="./hometextiles.html" class="block hover:text-neutral-900 transition">
                     Home Textiles
                   </a>
                 </li>
 
                 <li>
-                  <a href="./hospital.html"
-                    class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                  <a href="./hospital.html" class="block hover:text-neutral-900 transition">
                     Institutional Textiles
                   </a>
                 </li>
 
                 <li>
-                  <a href="./healthcare.html"
-                    class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                  <a href="./healthcare.html" class="block hover:text-neutral-900 transition">
                     Healthcare Textiles
                   </a>
                 </li>
 
                 <li>
-                  <a href="./terrytowels.html"
-                    class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                  <a href="./terrytowels.html" class="block hover:text-neutral-900 transition">
                     Bath Linen
                   </a>
                 </li>
 
                 <li>
-                  <a href="./apparels.html"
-                    class="block px-5 py-3 hover:bg-neutral-50 hover:text-neutral-900 transition">
+                  <a href="./apparels.html" class="block hover:text-neutral-900 transition">
                     Apparels
                   </a>
                 </li>
@@ -166,128 +312,40 @@
 
             </div>
 
-          </li>
+          </div>
 
-          <li>
-            <a href="./sustainability.html"
-              class="hover:text-neutral-900 transition duration-300">
-              Sustainability
-            </a>
-          </li>
-
-          <li>
-            <a href="./public/pdfs/tajpak.pdf"
-              download
-              class="hover:text-neutral-900 transition duration-300">
-              E-Brochure
-            </a>
-          </li>
-
-        </ul>
-
-        <!-- Contact -->
-        <a href="./contact.html"
-          class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
-
-          <span class="w-10 h-px bg-neutral-900"></span>
-
-          <span class="text-[14px] uppercase tracking-wide font-medium manrope">
-            Contact Us
-          </span>
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</nav>
-  <!-- Mobile Menu -->
-  <nav class="lg:hidden w-full fixed top-0 z-[999] bg-white shadow-md px-6 py-4 flex items-center justify-between">
-
-    <!-- Logo -->
-    <img loading="lazy" src="./public/images/logo-transparent.png" class="w-24" alt="Logo">
-
-    <!-- Hamburger -->
-    <button id="openMenu" class="text-3xl">
-      ☰
-    </button>
-
-  </nav>
-  <!-- Overlay -->
-  <div id="overlay" class="fixed smooth inset-0 bg-black/50 hidden z-[998]"></div>
-
-  <!-- Side Menu -->
-
-  <div class="relative">
-    <div id="sideMenu"
-      class="fixed manrope top-0 right-0 flex  flex-col justify-center h-full w-72 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-[999]">
-
-      <!-- Close button -->
-      <div class="flex top-4 right-4 justify-end absolute p-4">
-        <button id="closeMenu" class="text-2xl">✕</button>
-      </div>
-
-      <!-- Links -->
-      <ul class="flex flex-col space-y-6 px-6 text-sm font-medium">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About Us</a></li>
-        <li><a href="./services.html">Services</a></li>
-        <li>
-          <span class="block mb-2">Products</span>
-          <ul class="space-y-2 bg-gray-200 p-3 rounded-2xl text-sm">
-
-            <li>
-              <a href="./hometextiles.html"
-                class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
-                Home Textiles
-              </a>
-            </li>
-
-            <li>
-              <a href="./apparels.html"
-                class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
-                Apparels
-              </a>
-            </li>
-
-            <li>
-              <a href="./terrytowels.html"
-                class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
-                Bath Linen
-              </a>
-            </li>
-
-            <li>
-              <a href="./healthcare.html"
-                class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
-                Health Care Textiles
-              </a>
-            </li>
-
-            <li>
-              <a href="./hospital.html"
-                class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
-                Institutional Textiles
-              </a>
-            </li>
-
-          </ul>
         </li>
-        <li><a href="./sustainability.html">Sustainability</a></li>
+
+        <li>
+          <a href="./sustainability.html" class="hover:text-neutral-900 transition block">
+            Sustainability
+          </a>
+        </li>
+
+        <li>
+          <a href="./public/pdfs/tajpak.pdf" download class="hover:text-neutral-900 transition block">
+            E-Brochure
+          </a>
+        </li>
 
       </ul>
 
-      <!-- Button -->
-      <div class="px-6 mt-8">
-        <a href="#" class="block text-center bg-[#2e3092] text-white py-3 rounded-full">
-          Contact Us
-        </a>
-      </div>
+    </div>
+
+    <!-- Bottom Button -->
+    <div class="p-6 border-t border-neutral-200">
+
+      <a href="./contact.html"
+        class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 manrope">
+
+        <span class="w-8 h-px bg-current"></span>
+
+        Contact Us
+
+      </a>
 
     </div>
+
   </div>
 
   <!-- Mobile Menu End -->
@@ -806,106 +864,106 @@
 
 
   <!-- Why Choose Us Section -->
-<section class="bg-[#f7f6f4] py-24 relative overflow-hidden">
+  <section class="bg-[#f7f6f4] py-24 relative overflow-hidden">
 
-  <!-- Background Glow -->
-  <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+    <!-- Background Glow -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl"></div>
 
-  <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+    <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
 
-    <!-- Heading -->
-    <div class="text-center mb-16">
-      <p class="tracking-[0.3em] text-sm text-gray-500 font-['Raleway'] mb-4">
-        WHY CHOOSE US
-      </p>
-      <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
-        Fabric of <span class="font-['Playfair_Display'] tcolor text-4xl md:text-5xl">Excellence</span>
-      </h2>
+      <!-- Heading -->
+      <div class="text-center mb-16">
+        <p class="tracking-[0.3em] text-sm text-gray-500 font-['Raleway'] mb-4">
+          WHY CHOOSE US
+        </p>
+        <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+          Fabric of <span class="font-['Playfair_Display'] tcolor text-4xl md:text-5xl">Excellence</span>
+        </h2>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Vision -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <img loading='lazy' src="./public/images/h11.webp" class="h-52 w-full object-cover" alt="">
+          <div class="p-6">
+            <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Our Vision</h3>
+            <p class="text-sm text-[#6e6a5e] font-['Raleway']">
+              Our vision is not just about us. It is about making you more competitive, through innovation you can sell,
+              quality you can trust, and a supply chain that never lets you down.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mission -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <img loading='lazy' src="./public/images/h12.webp" class="h-52 w-full object-cover" alt="">
+          <div class="p-6">
+            <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Our Mission</h3>
+            <p class="text-sm text-[#6e6a5e] font-['Raleway']">
+              We do not just ship products. We deliver confidence, order after order, year after year. Your satisfaction
+              is our business model.
+            </p>
+          </div>
+        </div>
+
+        <!-- R&D -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <img loading='lazy' src="./public/images/h9.webp" class="h-52 w-full object-cover" alt="">
+          <div class="p-6">
+            <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Research & Development</h3>
+            <p class="text-sm text-[#6e6a5e] font-['Raleway']">
+              Stop reacting to trends after your competitors already have. We spot them at Heimtextil, Première Vision,
+              and Magic Las Vegas trade fairs, and build them into your home textile and apparel products first.
+            </p>
+          </div>
+        </div>
+
+        <!-- Social Responsibility -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <img loading='lazy' src="./public/images/h7.webp" class="h-52 w-full object-cover" alt="">
+          <div class="p-6">
+            <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Social Responsibility</h3>
+            <p class="text-sm text-[#6e6a5e] font-['Raleway']">
+              Your brand is only as strong as the supply chain behind it. We verify ethical practices at every
+              production house, ensuring responsible working environments, so you never have to explain a violation to
+              your customers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sustainability -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <img loading='lazy' src="./public/images/h10.webp" class="h-52 w-full object-cover" alt="">
+          <div class="p-6">
+            <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Sustainability</h3>
+            <p class="text-sm text-[#6e6a5e] font-['Raleway']">
+              Sustainability is no longer optional. It is demanded by buyers, retailers, and regulators. We build
+              OEKO TEX, BSCI, and Sedex-aligned practices into your supply chain, so you stay compliant,
+              competitive, and credible, without starting from scratch.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quality -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <img loading='lazy' src="./public/images/h8.webp" class="h-52 w-full object-cover" alt="">
+          <div class="p-6">
+            <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Quality Assurance</h3>
+            <p class="text-sm text-[#6e6a5e] font-['Raleway']">
+              Stop discovering defects at your warehouse. We enforce AQL 2.5 standards and conduct pre-inspection,
+              inline inspection, and post-inline inspection, backed by independent SGS testing. Issues are caught early,
+              quality is verified at every stage, and you receive consistent, premium-grade products every time.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-
-    <!-- Grid -->
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Vision -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
-        <img loading='lazy' src="./public/images/h11.webp" class="h-52 w-full object-cover" alt="">
-        <div class="p-6">
-          <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Our Vision</h3>
-          <p class="text-sm text-[#6e6a5e] font-['Raleway']">
-            Our vision is not just about us. It is about making you more competitive, through innovation you can sell,
-            quality you can trust, and a supply chain that never lets you down.
-          </p>
-        </div>
-      </div>
-
-      <!-- Mission -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
-        <img loading='lazy' src="./public/images/h12.webp" class="h-52 w-full object-cover" alt="">
-        <div class="p-6">
-          <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Our Mission</h3>
-          <p class="text-sm text-[#6e6a5e] font-['Raleway']">
-            We do not just ship products. We deliver confidence, order after order, year after year. Your satisfaction
-            is our business model.
-          </p>
-        </div>
-      </div>
-
-      <!-- R&D -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
-        <img loading='lazy' src="./public/images/h9.webp" class="h-52 w-full object-cover" alt="">
-        <div class="p-6">
-          <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Research & Development</h3>
-          <p class="text-sm text-[#6e6a5e] font-['Raleway']">
-            Stop reacting to trends after your competitors already have. We spot them at Heimtextil, Première Vision,
-            and Magic Las Vegas trade fairs, and build them into your home textile and apparel products first.
-          </p>
-        </div>
-      </div>
-
-      <!-- Social Responsibility -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
-        <img loading='lazy' src="./public/images/h7.webp" class="h-52 w-full object-cover" alt="">
-        <div class="p-6">
-          <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Social Responsibility</h3>
-          <p class="text-sm text-[#6e6a5e] font-['Raleway']">
-            Your brand is only as strong as the supply chain behind it. We verify ethical practices at every
-            production house, ensuring responsible working environments, so you never have to explain a violation to
-            your customers.
-          </p>
-        </div>
-      </div>
-
-      <!-- Sustainability -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
-        <img loading='lazy' src="./public/images/h10.webp" class="h-52 w-full object-cover" alt="">
-        <div class="p-6">
-          <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Sustainability</h3>
-          <p class="text-sm text-[#6e6a5e] font-['Raleway']">
-            Sustainability is no longer optional. It is demanded by buyers, retailers, and regulators. We build
-            OEKO TEX, BSCI, and Sedex-aligned practices into your supply chain, so you stay compliant,
-            competitive, and credible, without starting from scratch.
-          </p>
-        </div>
-      </div>
-
-      <!-- Quality -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
-        <img loading='lazy' src="./public/images/h8.webp" class="h-52 w-full object-cover" alt="">
-        <div class="p-6">
-          <h3 class="text-xl font-['Playfair_Display'] text-[#2d2a26] mb-2">Quality Assurance</h3>
-          <p class="text-sm text-[#6e6a5e] font-['Raleway']">
-            Stop discovering defects at your warehouse. We enforce AQL 2.5 standards and conduct pre-inspection,
-            inline inspection, and post-inline inspection, backed by independent SGS testing. Issues are caught early,
-            quality is verified at every stage, and you receive consistent, premium-grade products every time.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+  </section>
 
 
 

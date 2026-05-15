@@ -12,6 +12,60 @@ window.addEventListener("load", function () {
 });
 
 
+
+
+  const openMenu = document.getElementById("openMenu");
+  const closeMenu = document.getElementById("closeMenu");
+  const sideMenu = document.getElementById("sideMenu");
+  const overlay = document.getElementById("overlay");
+
+  // Open Menu
+  openMenu.addEventListener("click", () => {
+
+    sideMenu.classList.remove("translate-x-full");
+
+    overlay.classList.remove("hidden");
+
+    setTimeout(() => {
+      overlay.classList.remove("opacity-0");
+    }, 10);
+
+  });
+
+  // Close Function
+  function closeSidebar() {
+
+    sideMenu.classList.add("translate-x-full");
+
+    overlay.classList.add("opacity-0");
+
+    setTimeout(() => {
+      overlay.classList.add("hidden");
+    }, 300);
+
+  }
+
+  // Close Events
+  closeMenu.addEventListener("click", closeSidebar);
+
+  overlay.addEventListener("click", closeSidebar);
+
+  // Products Toggle
+  const productToggle = document.getElementById("productToggle");
+  const productMenu = document.getElementById("productMenu");
+  const productArrow = document.getElementById("productArrow");
+
+  productToggle.addEventListener("click", () => {
+
+    productMenu.classList.toggle("hidden");
+
+    productArrow.classList.toggle("rotate-180");
+
+  });
+
+
+
+
 // Navbar scroll effect
 
 
