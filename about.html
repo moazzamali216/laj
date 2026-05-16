@@ -515,6 +515,149 @@
 
 </section>
 
+<!-- About Us Slider Section -->
+<section class="relative  bg-white overflow-hidden">
+
+  <div class="container 2xl:max-w-[1530px] mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <p class="tracking-[0.35em] text-sm text-gray-400 man mb-4">
+        OUR JOURNEY
+      </p>
+
+      <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight">
+        The Evolution of LAJ Group
+      </h2>
+
+      <div class="w-10 h-px bg-neutral-300 mx-auto mt-6"></div>
+    </div>
+
+    <!-- Slider Wrapper -->
+    <div class="relative overflow-hidden">
+
+      <!-- Slides -->
+      <div id="aboutSlider" class="flex transition-transform duration-700 ease-in-out">
+
+        <!-- Slide 1 -->
+        <div class="min-w-full px-4">
+          <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h3 class="text-2xl play text-[#2d2a26]">Foundation in Textile Trade (Early 2000s)</h3>
+            <p class="text-gray-500 man text-sm leading-relaxed">
+              LAJ Group originated in Faisalabad, Pakistan’s textile hub, as a procurement facilitator connecting
+              international buyers with verified mills and raw material suppliers. The early phase focused on
+              building trust, supplier relationships, and understanding global textile demand patterns.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="min-w-full px-4">
+          <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h3 class="text-2xl play text-[#2d2a26]">Operational Structuring & Compliance Shift (2005 Onwards)</h3>
+            <p class="text-gray-500 man text-sm leading-relaxed">
+              By 2005, LAJ transitioned from transactional trading into structured sourcing systems.
+              We introduced vendor scorecards, risk-based supplier evaluation, and ISO-aligned quality frameworks,
+              making compliance a core operational pillar rather than an afterthought.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="min-w-full px-4">
+          <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h3 class="text-2xl play text-[#2d2a26]">Integrated Supply Chain Architecture</h3>
+            <p class="text-gray-500 man text-sm leading-relaxed">
+              Today, LAJ Group operates as a vertically integrated sourcing ecosystem combining procurement,
+              production coordination, quality assurance, and export logistics under a unified governance model.
+              Every stage is tracked for consistency, transparency, and performance optimization.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="min-w-full px-4">
+          <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h3 class="text-2xl play text-[#2d2a26]">Global Trade & Market Reach</h3>
+            <p class="text-gray-500 man text-sm leading-relaxed">
+              We serve high-growth international markets across Asia, Africa, the Middle East, and Latin America.
+              Our model is designed for Rest of the World (RoW) trade flows, supporting scalable demand,
+              flexible sourcing, and reliable export execution in diverse regulatory environments.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="min-w-full px-4">
+          <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h3 class="text-2xl play text-[#2d2a26]">Quality, Traceability & Control Systems</h3>
+            <p class="text-gray-500 man text-sm leading-relaxed">
+              Every product follows a fully traceable lifecycle—from fiber sourcing to spinning, weaving, dyeing,
+              finishing, and final inspection. We implement AQL-based quality control, GSM verification,
+              and third-party inspection protocols to ensure consistent export-grade standards.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="min-w-full px-4">
+          <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h3 class="text-2xl play text-[#2d2a26]">Modern Supply Chain Partner</h3>
+            <p class="text-gray-500 man text-sm leading-relaxed">
+              LAJ Group is no longer just a sourcing intermediary—it is a strategic supply chain partner delivering
+              reliability, transparency, and long-term scalability. Our focus is building resilient global trade
+              partnerships backed by structured governance and operational discipline.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <div class="flex justify-center gap-4 mt-10">
+
+        <button onclick="prevSlide()"
+          class="px-5 py-2 border border-gray-300 rounded-full text-sm text-[#2d2a26] hover:bg-gray-100 transition">
+           Prev
+        </button>
+
+        <button onclick="nextSlide()"
+          class="px-5 py-2 bg-[#2d2a26] text-white rounded-full text-sm hover:opacity-80 transition">
+          Next
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  let currentSlide = 0;
+  const slider = document.getElementById("aboutSlider");
+  const totalSlides = slider.children.length;
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlider();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlider();
+  }
+
+  setInterval(() => {
+    nextSlide();
+  }, 5000);
+</script>
+
 <!-- Beautiful FAQ Section -->
 <section class="relative py-10 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff] overflow-hidden">
 
@@ -643,6 +786,62 @@
   </div>
 </section>
 
+<!-- Elegant CTA Section -->
+<section class="relative py-20 bg-white overflow-hidden">
+
+  <!-- Soft Background Accents -->
+  <div class="absolute -top-24 -right-24 w-[26rem] h-[26rem] bg-[#2d2a26]/5 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-[28rem] h-[28rem] bg-[#2d2a26]/5 rounded-full blur-3xl"></div>
+
+  <div class="container 2xl:max-w-[1530px] mx-auto px-6 relative z-10">
+
+    <div class="max-w-5xl mx-auto text-center">
+
+      <!-- Small Label -->
+      <p class="text-xs tracking-[0.35em] text-gray-400 uppercase mb-4 mons">
+        Let’s Work Together
+      </p>
+
+      <!-- Heading -->
+      <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight">
+        Build Reliable Textile Supply<br>
+        <span class="text-gray-500">Without Complexity</span>
+      </h2>
+
+      <!-- Description -->
+      <p class="mt-6 text-gray-500 man text-base leading-relaxed max-w-3xl mx-auto">
+        LAJ Group connects global buyers with structured sourcing, verified production networks,
+        and transparent export operations. From sampling to shipment, everything is managed under one
+        accountable system.
+      </p>
+
+      <!-- Divider -->
+      <div class="w-16 h-px bg-gray-300 mx-auto mt-8 mb-10"></div>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+        <a href="./contact.html"
+          class="px-8 py-3.5 bg-[#2d2a26] text-white text-sm mons rounded-full hover:opacity-90 transition">
+          Start a Conversation
+        </a>
+
+        <a href="./about.html"
+          class="px-8 py-3.5 border border-gray-300 text-[#2d2a26] text-sm mons rounded-full hover:bg-gray-50 transition">
+          Explore Our Process
+        </a>
+
+      </div>
+
+      <!-- Bottom Micro Line -->
+      <p class="mt-10 text-xs text-gray-400 tracking-[0.25em]">
+        Sourcing • Production • Quality • Export
+      </p>
+
+    </div>
+
+  </div>
+</section>
 
   <footer class="relative font-[Playfair_Display] overflow-hidden border-t border-white/10 text-white bg-[#0b0b0c]">
 
