@@ -14,15 +14,19 @@ window.addEventListener("load", function () {
 
   const navbar = document.querySelector("nav");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 10) {
-    navbar.classList.add("top-0", "shadow-xl", "scale-[0.98]");
-    navbar.classList.remove("top-5");
-  } else {
-    navbar.classList.remove("top-0", "shadow-xl", "scale-[0.98]");
-    navbar.classList.add("top-5");
-  }
-});
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add("top-0");
+      navbar.classList.remove("top-5");
+
+      navbar.classList.add("scale-[0.98]");
+    } else {
+      navbar.classList.remove("top-0");
+      navbar.classList.add("top-5");
+
+      navbar.classList.remove("scale-[0.98]");
+    }
+  });
 
 
 const swiper = new Swiper(".mySwiper", {
