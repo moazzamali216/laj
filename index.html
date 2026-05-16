@@ -365,29 +365,25 @@
     <div class="absolute inset-0 z-0">
 
       <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
-        <img loading="lazy" decoding="async" 
-          src="./public/images/ho3.webp" class="w-full h-full object-cover"
+        <img loading="lazy" decoding="async" src="./public/images/ho3.webp" class="w-full h-full object-cover"
           alt="Mountain" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
 
       <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
-        <img loading="lazy" decoding="async" 
-          src="./public/images/ho1.webp" class="w-full h-full object-cover"
+        <img loading="lazy" decoding="async" src="./public/images/ho1.webp" class="w-full h-full object-cover"
           alt="Forest" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
 
       <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
-        <img loading="lazy" decoding="async" 
-          src="./public/images/ho2.webp" class="w-full h-full object-cover"
+        <img loading="lazy" decoding="async" src="./public/images/ho2.webp" class="w-full h-full object-cover"
           alt="Valley" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
 
       <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
-        <img loading="lazy" decoding="async" 
-          src="./public/images/ho4.webp" class="w-full h-full object-cover"
+        <img loading="lazy" decoding="async" src="./public/images/ho4.webp" class="w-full h-full object-cover"
           alt="Ocean" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
@@ -395,7 +391,7 @@
     </div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 mt-24 text-center text-white px-6 max-w-3xl mx-auto"> 
+    <div class="relative z-10 mt-24 text-center text-white px-6 max-w-3xl mx-auto">
 
       <p class="uppercase tracking-[0.3em] text-sm text-white/50 mb-4 font-light">Explore the World</p>
 
@@ -413,11 +409,11 @@
         <a href="./contact.html"
           class="px-6 py-2.5 mons bg-white text-black text-sm  rounded-full hover:bg-white/90 transition">
           Contact Now
-      </a>
+        </a>
         <a href="./about.html"
           class="px-6 py-2.5 mons border border-white/50 text-white text-sm  rounded-full hover:bg-white/10 transition">
           Learn More
-    </a>
+        </a>
       </div>
 
       <!-- Slide Dots -->
@@ -426,104 +422,103 @@
     </div>
 
   </section>
-<script>
-  const slides = document.querySelectorAll(".slide");
-  const heading = document.getElementById("hero-heading");
-  const desc = document.getElementById("hero-desc");
-  const dotsContainer = document.getElementById("dots");
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    const heading = document.getElementById("hero-heading");
+    const desc = document.getElementById("hero-desc");
+    const dotsContainer = document.getElementById("dots");
 
-  const heroContent = [
-    {
-      heading: "Reliable Apparel <br> Manufacturing Hub",
-      subtext: "Helping global fashion businesses connect with dependable production partners in Pakistan."
-    },
-    {
-      heading: "Efficient Workflow <br> & Order Management",
-      subtext: "Every stage from development to dispatch is handled with precision and timely coordination."
-    },
-    {
-      heading: "Trusted Standards <br> Across Production",
-      subtext: "Consistent quality control, verified suppliers, and transparent manufacturing practices."
-    },
-    {
-      heading: "Complete Garment <br> Export Solutions",
-      subtext: "End-to-end sourcing and production support designed for international apparel brands."
-    }
-  ];
+    const heroContent = [
+      {
+        heading: "Reliable Apparel <br> Manufacturing Hub",
+        subtext: "Helping global fashion businesses connect with dependable production partners in Pakistan."
+      },
+      {
+        heading: "Efficient Workflow <br> & Order Management",
+        subtext: "Every stage from development to dispatch is handled with precision and timely coordination."
+      },
+      {
+        heading: "Trusted Standards <br> Across Production",
+        subtext: "Consistent quality control, verified suppliers, and transparent manufacturing practices."
+      },
+      {
+        heading: "Complete Garment <br> Export Solutions",
+        subtext: "End-to-end sourcing and production support designed for international apparel brands."
+      }
+    ];
 
-  let current = 0;
+    let current = 0;
 
-  // dots
-  const dots = heroContent.map((_, i) => {
-    const dot = document.createElement("button");
+    // dots
+    const dots = heroContent.map((_, i) => {
+      const dot = document.createElement("button");
 
-    dot.className =
-      i === 0
-        ? "w-8 h-2 rounded-full bg-white"
-        : "w-2 h-2 rounded-full bg-white/40";
-
-    dot.onclick = () => goTo(i);
-
-    dotsContainer.appendChild(dot);
-    return dot;
-  });
-
-  function updateUI(index) {
-    heading.innerHTML = heroContent[index].heading;
-    desc.textContent = heroContent[index].subtext;
-
-    dots.forEach((d, i) => {
-      d.className =
-        i === index
+      dot.className =
+        i === 0
           ? "w-8 h-2 rounded-full bg-white"
           : "w-2 h-2 rounded-full bg-white/40";
+
+      dot.onclick = () => goTo(i);
+
+      dotsContainer.appendChild(dot);
+      return dot;
     });
-  }
 
-  function goTo(index) {
-    if (index === current) return;
+    function updateUI(index) {
+      heading.innerHTML = heroContent[index].heading;
+      desc.textContent = heroContent[index].subtext;
 
-    const prev = current;
+      dots.forEach((d, i) => {
+        d.className =
+          i === index
+            ? "w-8 h-2 rounded-full bg-white"
+            : "w-2 h-2 rounded-full bg-white/40";
+      });
+    }
 
-    slides[prev].classList.replace("opacity-100", "opacity-0");
-    slides[index].classList.replace("opacity-0", "opacity-100");
+    function goTo(index) {
+      if (index === current) return;
 
-    heading.style.opacity = "0";
-    heading.style.transform = "translateY(10px)";
-    desc.style.opacity = "0";
-    desc.style.transform = "translateY(10px)";
+      const prev = current;
 
-    setTimeout(() => {
-      updateUI(index);
+      slides[prev].classList.replace("opacity-100", "opacity-0");
+      slides[index].classList.replace("opacity-0", "opacity-100");
 
-      heading.style.opacity = "1";
-      heading.style.transform = "translateY(0)";
-      desc.style.opacity = "1";
-      desc.style.transform = "translateY(0)";
-    }, 300);
+      heading.style.opacity = "0";
+      heading.style.transform = "translateY(10px)";
+      desc.style.opacity = "0";
+      desc.style.transform = "translateY(10px)";
 
-    current = index;
-  }
+      setTimeout(() => {
+        updateUI(index);
 
-  // init
-  slides[0].classList.add("opacity-100");
-  updateUI(0);
+        heading.style.opacity = "1";
+        heading.style.transform = "translateY(0)";
+        desc.style.opacity = "1";
+        desc.style.transform = "translateY(0)";
+      }, 300);
 
-  // autoplay (lightweight)
-  setInterval(() => {
-    goTo((current + 1) % slides.length);
-  }, 3000);
+      current = index;
+    }
 
-  // transitions
-  heading.style.transition = "opacity 0.4s ease, transform 0.4s ease";
-  desc.style.transition = "opacity 0.4s ease, transform 0.4s ease";
-</script>
+    // init
+    slides[0].classList.add("opacity-100");
+    updateUI(0);
+
+    // autoplay (lightweight)
+    setInterval(() => {
+      goTo((current + 1) % slides.length);
+    }, 3000);
+
+    // transitions
+    heading.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+    desc.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+  </script>
 
   <section class="relative w-full sm:hidden h-screen overflow-hidden flex flex-col items-center justify-end pb-14 px-6">
 
     <!-- Background Image -->
-    <img loading="lazy" decoding="async" fetchpriority="low"
-      src="./public/images/ho3.webp"
+    <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho3.webp"
       class="absolute inset-0 w-full h-full object-cover object-center" alt="Hero background" />
 
     <!-- Dark Gradient Overlay — heavier at bottom for text legibility -->
@@ -594,56 +589,65 @@
   </section>
 
   <!-- About Our Story Section -->
-<section class="relative pt-16 bg-white overflow-hidden">
+  <section class="relative pt-16 bg-white overflow-hidden">
 
-  <div class="container 2xl:max-w-[1530px] mx-auto px-6 relative z-10">
+    <div class="container 2xl:max-w-[1530px] mx-auto px-6 relative z-10">
 
-    <!-- Section Label -->
-    <div class="text-center mb-8">
-      <p class="tracking-[0.3em] text-sm text-gray-400 font-['Raleway'] mb-4">WHO WE ARE</p>
-      <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
-        Our Story
-      </h2>
-      <div class="w-10 h-px bg-neutral-300 mx-auto mt-6"></div>
-    </div>
+      <!-- Section Label -->
+      <div class="text-center mb-8">
+        <p class="tracking-[0.3em] text-sm text-gray-400 font-['Raleway'] mb-4">WHO WE ARE</p>
+        <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+          Our Story
+        </h2>
+        <div class="w-10 h-px bg-neutral-300 mx-auto mt-6"></div>
+      </div>
 
-    <!-- Content -->
-    <div class="max-w-4xl mx-auto text-center space-y-8">
+      <!-- Content -->
+      <div class="max-w-4xl mx-auto text-center space-y-8">
 
-      <h3 class="text-2xl md:text-3xl play text-[#2d2a26] leading-snug">
-        From a Small Workshop to a Global Textile Bridge
-      </h3>
+        <h3 class="text-2xl md:text-3xl play text-[#2d2a26] leading-snug">
+          From a Small Workshop to a Global Textile Bridge
+        </h3>
 
-      <p class="text-gray-500 man text-[15px] leading-relaxed">
-        Laj was founded in Faisalabad, Pakistan’s textile capital, with a simple but powerful vision — to take quality craftsmanship beyond local markets and build a global textile bridge. What started as a small sourcing setup has grown into a structured and reliable procurement network that now connects certified manufacturers, export houses, and international retail brands across more than 25 countries.
-      </p>
+        <p class="text-gray-500 man text-[15px] leading-relaxed">
+          Laj was founded in Faisalabad, Pakistan’s textile capital, with a simple but powerful vision — to take quality
+          craftsmanship beyond local markets and build a global textile bridge. What started as a small sourcing setup
+          has grown into a structured and reliable procurement network that now connects certified manufacturers, export
+          houses, and international retail brands across more than 25 countries.
+        </p>
 
-      <p class="text-gray-500 man text-[15px] leading-relaxed">
-        Over time, we have developed a fully integrated supply ecosystem that includes certified mills, vertically aligned stitching units, and compliant dyeing facilities operating under globally recognized standards such as OEKO-TEX®, BSCI, and GOTS-aligned production systems. Every shipment is handled with strict attention to detail, undergoing AQL 2.5 quality inspections, third-party verification when required (including SGS testing), and complete export documentation such as packing lists, compliance certificates, and lab reports.
-      </p>
+        <p class="text-gray-500 man text-[15px] leading-relaxed">
+          Over time, we have developed a fully integrated supply ecosystem that includes certified mills, vertically
+          aligned stitching units, and compliant dyeing facilities operating under globally recognized standards such as
+          OEKO-TEX®, BSCI, and GOTS-aligned production systems. Every shipment is handled with strict attention to
+          detail, undergoing AQL 2.5 quality inspections, third-party verification when required (including SGS
+          testing), and complete export documentation such as packing lists, compliance certificates, and lab reports.
+        </p>
 
-      <p class="text-gray-500 man text-[15px] leading-relaxed">
-        Today, our sourcing capabilities extend across home textiles, apparel, denim, institutional fabrics, and custom OEM manufacturing. With a coordinated vendor network, we manage over 500,000 export-ready orders annually while maintaining consistency, compliance, and reliability at every stage of production and delivery.
-      </p>
+        <p class="text-gray-500 man text-[15px] leading-relaxed">
+          Today, our sourcing capabilities extend across home textiles, apparel, denim, institutional fabrics, and
+          custom OEM manufacturing. With a coordinated vendor network, we manage over 500,000 export-ready orders
+          annually while maintaining consistency, compliance, and reliability at every stage of production and delivery.
+        </p>
 
-      <!-- CTA -->
-      <div class="flex items-center justify-center gap-6 pt-4">
-        <a href="./about.html"
-          class="text-[#2d2a26] hover:opacity-50 transition man text-sm font-medium uppercase tracking-widest">
-          Our Full Story
-        </a>
+        <!-- CTA -->
+        <div class="flex items-center justify-center gap-6 pt-4">
+          <a href="./about.html"
+            class="text-[#2d2a26] hover:opacity-50 transition man text-sm font-medium uppercase tracking-widest">
+            Our Full Story
+          </a>
 
-        <a href="./contact.html"
-          class="px-6 py-2.5 bg-[#2d2a26] text-white text-sm man rounded-full hover:opacity-75 transition">
-          Work With Us
-        </a>
+          <a href="./contact.html"
+            class="px-6 py-2.5 bg-[#2d2a26] text-white text-sm man rounded-full hover:opacity-75 transition">
+            Work With Us
+          </a>
+        </div>
+
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
   <!-- Values Section -->
   <section class="relative py-16 bg-[#f8f7f5] overflow-hidden">
@@ -1094,8 +1098,7 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low"
-              src="./public/images/ho5.webp"
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho5.webp"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Home Textiles">
           </div>
 
@@ -1126,8 +1129,7 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low"
-              src="./public/images/ho10.webp"
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho10.webp"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
               alt="Institutional Textiles">
           </div>
@@ -1159,8 +1161,7 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low"
-              src="./public/images/ho9.webp"
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho9.webp"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
               alt="Healthcare Textiles">
           </div>
@@ -1192,8 +1193,7 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low"
-              src="./public/images/ho6.webp"
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho6.webp"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Bath Linen">
           </div>
 
@@ -1224,8 +1224,7 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low"
-              src="./public/images/ho7.webp"
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho7.webp"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Apparels">
           </div>
 
@@ -1256,8 +1255,7 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low"
-              src="public/images/ho8.webp"
+            <img loading="lazy" decoding="async" fetchpriority="low" src="public/images/ho8.webp"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Custom Sourcing">
           </div>
 
@@ -1405,8 +1403,7 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low"
-            src="./public/images/ho12.webp"
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho12.webp"
             class="h-[250px] w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1425,8 +1422,7 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low"
-            src="./public/images/ho13.webp"
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho13.webp"
             class="h-[250px] w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1444,8 +1440,7 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low"
-            src="./public/images/ho11.webp"
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho11.webp"
             class="h-[250px] w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1463,8 +1458,7 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low"
-            src="./public/images/ho14.webp"
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho14.webp"
             class="h-[250px] w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1472,7 +1466,8 @@
               Social Responsibility
             </h3>
             <p class="text-sm text-gray-500 man leading-relaxed">
-              We are committed to ethical sourcing and responsible manufacturing that respects people, communities, and the environment.
+              We are committed to ethical sourcing and responsible manufacturing that respects people, communities, and
+              the environment.
             </p>
           </div>
 
@@ -1482,8 +1477,7 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low"
-            src="./public/images/ho15.webp"
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho15.webp"
             class="h-[250px] w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1501,8 +1495,7 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low"
-            src="./public/images/ho16.webp"
+          <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/ho16.webp"
             class="h-[250px] w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1628,6 +1621,56 @@
     </div>
   </section>
 
+  <!-- CTA Section -->
+<section class="relative py-20 bg-[#f8f7f5] overflow-hidden">
+
+  <!-- Subtle Pattern Background -->
+  <div class="absolute inset-0 opacity-[0.06]"
+    style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');">
+  </div>
+
+  <!-- Soft Gradient Wash -->
+  <div class="absolute inset-0 bg-gradient-to-r from-white via-[#f8f7f5] to-white"></div>
+
+  <div class="relative z-10 container 2xl:max-w-[1530px] mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <p class="tracking-[0.35em] text-sm text-gray-400 man mb-4">
+      LET’S WORK TOGETHER
+    </p>
+
+    <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight mb-6">
+      Build a Smarter Textile Supply Chain
+    </h2>
+
+    <p class="text-gray-500 man text-sm max-w-2xl mx-auto leading-relaxed mb-10">
+      Partner with LAJ Group for structured sourcing, reliable production oversight, and fully compliant global
+      export operations. We ensure transparency from fiber to final delivery across every shipment.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+      <a href="./contact.html"
+        class="px-8 py-3 bg-[#2d2a26] text-white man text-sm font-medium rounded-full hover:opacity-80 transition">
+        Start Inquiry
+      </a>
+
+      <a href="./about.html"
+        class="px-8 py-3 border border-[#2d2a26]/20 man text-[#2d2a26] text-sm font-medium rounded-full hover:bg-[#2d2a26]/5 transition">
+        About us
+      </a>
+
+    </div>
+
+    <!-- Trust Line -->
+    <p class="text-gray-400 text-xs mt-8 tracking-wider">
+      Trusted across Asia • Africa • Middle East • Latin America
+    </p>
+
+  </div>
+
+</section>
 
   <footer class="relative font-[Playfair_Display] overflow-hidden border-t border-white/10 text-white bg-[#0b0b0c]">
 
