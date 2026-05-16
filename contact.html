@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAJ - Contact</title>
+    <link rel="Icon" href="./public/images/app-logo.png" type="image/x-icon">
+
+    <!-- External CSsS -->
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./src/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+    <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy" src="./public/images/logo.png"
+        class="w-28 animate-up-pulse" alt="Logo">
+    <p class="mt-4 text-sm tracking-widest text-gray-500 animate-up-pulse">
+        Loading...
+    </p>
+</div>
+
+<body class=" bg-gray-50">
+    <!-- Desktop Navbar -->
+    <!-- Minimal Luxury Navbar -->
+    <nav class="hidden lg:block  fixed top-5 left-0 w-full z-50">
+
+        <!-- Side Gaps -->
+        <div class="max-w-7xl mx-auto px-5">
+
+            <!-- Navbar Container -->
+            <div class="bg-[#f8f7f5]/95  shadow-md backdrop-blur-md border border-neutral-200 rounded-[26px] ">
+
+                <!-- Top Area -->
+                <div class="flex items-center justify-between px-8 py-2.5 border-b border-neutral-200">
+
+                    <!-- Logo -->
+                    <a href="./index.html" class="flex items-center">
+
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            alt="Logo" class="w-28 object-contain">
+
+                    </a>
+
+                    <!-- Small Tags -->
+                    <div class="flex items-center gap-2">
+
+                        <span
+                            class="px-4 py-1.5 border border-neutral-300 rounded-lg text-[12px] tracking-wide text-neutral-500 man">
+                            ISO Certified
+                        </span>
+
+                        <span
+                            class="px-4 py-1.5 border border-neutral-300 rounded-lg text-[12px] tracking-wide text-neutral-500 man">
+                            Since 2000
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Bottom Menu -->
+                <div class="flex items-center justify-between px-8 py-2.5">
+
+                    <!-- Nav Links -->
+                    <ul class="flex items-center gap-12 text-[12px] tracking-[0.175em] uppercase text-gray-500">
+
+                        <!-- Active -->
+                        <li class="relative">
+
+                            <a href="./index.html" class="hover:text-neutral-900 transition duration-300">
+                                Home
+                            </a>
+
+
+
+                        </li>
+
+                        <li>
+                            <a href="./about.html" class="hover:text-neutral-900 transition duration-300">
+                                About
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="./services.html" class="hover:text-neutral-900 transition duration-300">
+                                Services
+                            </a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="relative">
+
+                            <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+                                data-dropdown-placement="bottom-start"
+                                class="flex text-[12px] tracking-[0.175em] uppercase text-gray-500  items-center gap-1 hover:text-neutral-900 transition duration-300">
+
+                                Products
+
+                                <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <!-- Dropdown Container -->
+                            <div id="dropdownProducts"
+                                class="hidden absolute top-12 left-0 w-60 bg-white border border-neutral-200 rounded-2xl shadow-lg overflow-hidden">
+                                <ul class=" text-[11px] tracking-[0.175em] uppercase text-gray-500  ">
+                                    <li> <a href="./hometextiles.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Home
+                                            Textiles </a>
+                                    </li>
+                                    <li> <a href="./hospital.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Institutional
+                                            Textiles </a> </li>
+                                    <li> <a href="./healthcare.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Healthcare
+                                            Textiles
+                                        </a> </li>
+                                    <li> <a href="./terrytowels.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Bath Linen
+                                        </a>
+                                    </li>
+                                    <li> <a href="./apparels.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Apparels
+                                        </a> </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="./sustainability.html" class="hover:text-neutral-900 transition duration-300">
+                                Sustainability
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./public/pdfs/Laj.pdf" download
+                                class="hover:text-neutral-900 transition duration-300">
+                                E-Brochure
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Contact -->
+                    <a href="./contact.html"
+                        class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
+
+                        <span class="w-10 h-px bg-neutral-900"></span>
+
+                        <span class="text-[14px] uppercase tracking-wide font-medium man">
+                            Contact Us
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ========================= -->
+    <!-- Mobile Luxury Navbar -->
+    <!-- ========================= -->
+
+    <!-- Top Navbar -->
+    <nav class="lg:hidden fixed top-5 left-0 w-full z-[999]">
+
+        <div class="px-4">
+
+            <div
+                class="bg-[#f8f7f5]/95 backdrop-blur-md border border-neutral-200 rounded-2xl px-5 py-4 flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="./index.html">
+
+                    <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy"
+                        src="./public/images/logo.png" class="w-24 object-contain" alt="Logo">
+
+                </a>
+
+                <!-- Menu Button -->
+                <button id="openMenu"
+                    class="w-11 h-11 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                            d="M4 6h16M4 12h16M4 18h16" />
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay"
+        class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-[998] opacity-0 transition duration-300">
+    </div>
+
+    <!-- Side Menu -->
+    <div id="sideMenu"
+        class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
+
+            <!-- Logo -->
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                class="w-24 object-contain" alt="Logo">
+
+            <!-- Close -->
+            <button id="closeMenu"
+                class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+
+                ✕
+
+            </button>
+
+        </div>
+
+        <!-- Menu Links -->
+        <div class="flex-1 overflow-y-auto px-6 py-8">
+
+            <ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 man">
+
+                <li>
+                    <a href="./index.html" class="flex items-center justify-between hover:text-neutral-900 transition">
+
+                        Home
+
+                        <span class="w-8 h-px bg-neutral-900"></span>
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./about.html" class="hover:text-neutral-900 transition block">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./services.html" class="hover:text-neutral-900 transition block">
+                        Services
+                    </a>
+                </li>
+
+                <!-- Products -->
+                <li>
+
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
+
+                        <!-- Products Heading -->
+                        <button id="productToggle"
+                            class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
+
+                            <span>Products</span>
+
+                            <svg id="productArrow" xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 transition duration-300" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                                    d="M19 9l-7 7-7-7" />
+
+                            </svg>
+
+                        </button>
+
+                        <!-- Dropdown -->
+                        <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
+
+                            <ul class="space-y-4 text-[14px] text-neutral-600">
+
+                                <li>
+                                    <a href="./hometextiles.html" class="block hover:text-neutral-900 transition">
+                                        Home Textiles
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./hospital.html" class="block hover:text-neutral-900 transition">
+                                        Institutional Textiles
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./healthcare.html" class="block hover:text-neutral-900 transition">
+                                        Healthcare Textiles
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./terrytowels.html" class="block hover:text-neutral-900 transition">
+                                        Bath Linen
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./apparels.html" class="block hover:text-neutral-900 transition">
+                                        Apparels
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="./sustainability.html" class="hover:text-neutral-900 transition block">
+                        Sustainability
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./public/pdfs/Laj.pdf" download class="hover:text-neutral-900 transition block">
+                        E-Brochure
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Bottom Button -->
+        <div class="p-6 border-t border-neutral-200">
+
+            <a href="./contact.html"
+                class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 man">
+
+                <span class="w-8 h-px bg-current"></span>
+
+                Contact Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <section class="relative h-[500px]  flex items-center justify-center overflow-hidden">
+
+        <!-- Background Image -->
+        <img loading='lazy' decoding="async" fetchpriority="low" src="./public/images/co1.webp"
+            class="absolute inset-0 w-full h-full object-cover" alt="About TajPak">
+
+        <!-- Black Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/20"></div>
+
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4">
+
+            <h1 class="text-5xl md:text-5xl translate-y-[50px] font-['Playfair_Display'] text-white">
+                Contact Us
+            </h1>
+
+        </div>
+
+    </section>
+
+    <section class="py-24 bg-[#f8f7f5]">
+
+        <div class="container 2xl:max-w-[750px] mx-auto px-6">
+
+            <!-- Header -->
+            <div class="text-center mb-14">
+                <p class="tracking-[0.3em] text-xs text-gray-400 uppercase man">
+                    Contact LAJ Group
+                </p>
+
+                <h2 class="text-4xl md:text-5xl play text-[#2d2a26] mt-4">
+                    Let’s Discuss Your Requirement
+                </h2>
+
+                <p class="text-sm text-gray-500 man mt-5 max-w-xl mx-auto leading-relaxed">
+                    Share your product details, quantity, and sourcing needs. Our export team will respond with pricing
+                    and feasibility within 24–48 hours.
+                </p>
+
+                <div class="w-14 h-px bg-neutral-300 mx-auto mt-8"></div>
+            </div>
+
+            <!-- Form Card -->
+            <div class="bg-white border border-neutral-200 rounded-3xl max-w-[700px] mx-auto w-full shadow-lg p-10">
+
+                <form action="https://formspree.io/f/xrejplwz" method="POST" class="space-y-3 ">
+
+                    <!-- Name -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-500 uppercase">Full Name</label>
+                        <input type="text" name="name" required
+                            class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2d2a26]/10">
+                    </div>
+
+                    <!-- Email + Phone -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                        <div>
+                            <label class="text-xs tracking-widest text-gray-500 uppercase">Email</label>
+                            <input type="email" name="email" required
+                                class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2d2a26]/10">
+                        </div>
+
+                        <div>
+                            <label class="text-xs tracking-widest text-gray-500 uppercase">Phone</label>
+                            <input type="text" name="phone"
+                                class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2d2a26]/10">
+                        </div>
+
+                    </div>
+
+                    <!-- Company -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-500 uppercase">Company</label>
+                        <input type="text" name="company"
+                            class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2d2a26]/10">
+                    </div>
+
+                    <!-- Inquiry Type -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-500 uppercase">Inquiry Type</label>
+                        <select name="inquiry_type"
+                            class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2d2a26]/10">
+
+                            <option>Product Inquiry</option>
+                            <option>Bulk Order</option>
+                            <option>Private Label</option>
+                            <option>Custom Manufacturing</option>
+                            <option>Partnership</option>
+
+                        </select>
+                    </div>
+
+                    <!-- Product Category -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-500 uppercase">Product Category</label>
+                        <select name="product_category"
+                            class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2d2a26]/10">
+
+                            <option>Home Textiles</option>
+                            <option>Institutional Textiles</option>
+                            <option>Healthcare Textiles</option>
+                            <option>Bath Linen</option>
+                            <option>Apparel</option>
+
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="text-xs tracking-widest text-gray-500 uppercase">Your Requirement</label>
+                        <textarea name="message" rows="6"
+                            placeholder="Describe your product specifications, quantity, packaging, or sampling needs..."
+                            class="mt-2 w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2d2a26]/10"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit"
+                        class="w-fit px-8 py-4 bg-[#2d2a26] text-white rounded-xl text-sm tracking-wide hover:opacity-90 transition">
+                        Submit Inquiry
+                    </button>
+
+                    <p class="text-xs text-gray-400 text-center">
+                        Response time: 24–48 hours • Export team support
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Beautiful FAQ Section -->
+    <section class="relative py-10 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff] overflow-hidden">
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <p class="tracking-[0.3em] text-sm text-gray-500 mons mb-4">
+                    CONTACT & SUPPORT
+                </p>
+
+                <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight">
+                    Frequently Asked Questions <br>
+                    <span class="play tcolor text-4xl md:text-5xl">Contact & Inquiry Support</span>
+                </h2>
+            </div>
+
+            <!-- Accordion -->
+            <div class="space-y-5">
+
+                <!-- Item 1 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        How can I contact LAJ Group for product inquiries?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            You can contact us through the inquiry form on this page or email our export team directly.
+                            We typically respond within 24–48 business hours with detailed product and pricing
+                            information.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What information should I include in my inquiry?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Please include product type, quantity, specifications (GSM, material, size), packaging
+                            requirements, and destination country. This helps us provide accurate pricing and production
+                            feasibility.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Do you handle bulk and custom orders?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Yes, we specialize in bulk manufacturing, private label production, and custom textile
+                            development based on buyer specifications and brand requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What is your typical response time?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Our export team usually responds within 24–48 hours on business days, depending on the
+                            complexity of the inquiry and product requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Can I request samples before placing an order?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Yes, sample development is available for most product categories. Sampling timelines depend
+                            on product complexity and specification requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Do you ship internationally?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Yes, we serve global markets including Asia, Africa, the Middle East, and Latin America with
+                            FOB, CIF, and CNF shipping options.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        How do I get pricing for my product requirement?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Pricing is based on product type, quantity, material specifications, and destination. Submit
+                            your inquiry form with details and our team will provide a tailored quotation.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="relative font-[Playfair_Display] overflow-hidden border-t border-white/10 text-white bg-[#0b0b0c]">
+
+        <!-- Dark base -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0b0b0c] via-[#0f0f10] to-[#0b0b0c]"></div>
+
+        <!-- subtle texture -->
+        <div
+            class="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat">
+        </div>
+
+        <!-- Top Strip (compact) -->
+        <div class="relative border-b border-white/10 py-3 px-6 backdrop-blur-xl bg-white/5">
+            <div
+                class="container 2xl:max-w-[1530px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+
+                <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">
+                    Faisalabad, Pakistan
+                </p>
+
+                <div class="flex items-center gap-4">
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">ISO Certified</span>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Est. 2010</span>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">18+ Countries</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main Footer (reduced spacing) -->
+        <div class="relative container 2xl:max-w-[1530px] mx-auto px-6 py-10">
+
+            <div class="grid lg:grid-cols-12 gap-10">
+
+                <!-- Brand -->
+                <div class="lg:col-span-4 flex flex-col gap-4">
+
+                    <a href="./index.html">
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            style="  filter: invert(1);" alt="LAJ Logo"
+                            class="w-24 object-contain opacity-90 brightness-200">
+                    </a>
+
+                    <p class="text-sm text-gray-400 man leading-relaxed max-w-xs">
+                        Connecting international buyers with trusted textile manufacturers across Pakistan.
+                    </p>
+
+                    <!-- Social -->
+                    <div class="flex items-center gap-3">
+
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition">
+                            <i class="fa-brands fa-facebook-f text-[11px]"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition">
+                            <i class="fa-brands fa-instagram text-[11px]"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition">
+                            <i class="fa-brands fa-linkedin-in text-[11px]"></i>
+                        </a>
+
+
+
+                    </div>
+
+                </div>
+
+                <!-- Nav -->
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-500 mb-4">Navigate</p>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="./index.html" class="text-sm text-gray-400 hover:text-white transition">Home</a>
+                        </li>
+                        <li><a href="./about.html" class="text-sm text-gray-400 hover:text-white transition">About</a>
+                        </li>
+                        <li><a href="./services.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="./sustainability.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Sustainability</a></li>
+                        <li><a href="./contact.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-500 mb-4">Products</p>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="./hometextiles.html" class="text-sm text-gray-400 hover:text-white transition">Home
+                                Textiles</a></li>
+                        <li><a href="./hospital.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Institutional
+                                Textiles</a></li>
+                        <li><a href="./healthcare.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Healthcare
+                                Textiles</a></li>
+                        <li><a href="./terrytowels.html" class="text-sm text-gray-400 hover:text-white transition">Bath
+                                Linen</a>
+                        </li>
+                        <li><a href="./apparels.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Apparels</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-500 mb-4">Get In Touch</p>
+
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a href="tel:+923016097666" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Phone</span>
+                                <span class="text-xs text-gray-300 hover:text-white transition">+92 301 6097666</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:info@lajhometextile.com" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Email</span>
+                                <span
+                                    class="text-xs text-gray-300 hover:text-white transition">info@lajhometextile.com</span>
+                            </a>
+                        </li>
+
+                        <li class="flex flex-col">
+                            <span class="text-[10px] text-gray-500">Location</span>
+                            <span class="text-xs text-gray-300">Faisalabad, Pakistan</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar (compact) -->
+            <div
+                class="mt-10 border-t border-white/10 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+
+                <p class="text-[11px] text-gray-500">© 2026 LAJ. All rights reserved.</p>
+
+                <div class="flex items-center gap-4">
+                    <a href="./terms.html" class="text-[11px] text-gray-500 hover:text-white transition">Terms</a>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <a href="./privacy.html" class="text-[11px] text-gray-500 hover:text-white transition">Privacy</a>
+                </div>
+
+                <p class="text-[11px] text-gray-500">
+                    Developed by
+                    <a href="https://wa.me/923224066958" target="_blank"
+                        class="text-gray-300 hover:text-white transition">
+                        MAC
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script defer src="./src/js/index.js"></script>
+    <script defer src="./src/js/gsap.js"></script>
+
+
+
+</body>
+
+
+</html>
