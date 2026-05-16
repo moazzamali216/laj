@@ -1059,6 +1059,9 @@ input[type="range"]::-ms-fill-lower {
 .h-14 {
   height: 3.5rem;
 }
+.h-\[24rem\] {
+  height: 24rem;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -1134,6 +1137,9 @@ input[type="range"]::-ms-fill-lower {
 .w-80 {
   width: 20rem;
 }
+.w-\[24rem\] {
+  width: 24rem;
+}
 .min-w-full {
   min-width: 100%;
 }
@@ -1171,6 +1177,9 @@ input[type="range"]::-ms-fill-lower {
   flex: 1 1 0%;
 }
 .flex-shrink-0 {
+  flex-shrink: 0;
+}
+.shrink-0 {
   flex-shrink: 0;
 }
 .border-collapse {
@@ -1428,6 +1437,10 @@ input[type="range"]::-ms-fill-lower {
   --tw-border-opacity: 1;
   border-color: rgb(45 42 38 / var(--tw-border-opacity));
 }
+.border-orange-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 236 220 / var(--tw-border-opacity));
+}
 .border-t-black {
   --tw-border-opacity: 1;
   border-top-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1568,6 +1581,10 @@ input[type="range"]::-ms-fill-lower {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(46 48 146 / var(--tw-bg-opacity)) !important;
 }
+.bg-orange-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 248 241 / var(--tw-bg-opacity));
+}
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1650,6 +1667,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .to-emerald-50 {
   --tw-gradient-to: #ecfdf5;
+}
+.to-\[\#f1f1f1\] {
+  --tw-gradient-to: #f1f1f1;
 }
 .bg-repeat {
   background-repeat: repeat;
@@ -2058,6 +2078,10 @@ input[type="range"]::-ms-fill-lower {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
+.text-cyan-600 {
+  --tw-text-opacity: 1;
+  color: rgb(8 145 178 / var(--tw-text-opacity));
+}
 .opacity-0 {
   opacity: 0;
 }
@@ -2427,6 +2451,26 @@ input[type="range"]::-ms-fill-lower {
 .group:hover .group-hover\:bg-\[\#2d2a26\] {
   --tw-bg-opacity: 1;
   background-color: rgb(45 42 38 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-cyan-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 145 178 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-amber-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 119 6 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-indigo-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 80 236 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-orange-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(208 56 1 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:stroke-white {
