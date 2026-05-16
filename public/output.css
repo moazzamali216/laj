@@ -1912,6 +1912,9 @@ input[type="range"]::-ms-fill-lower {
 .pb-12 {
   padding-bottom: 3rem;
 }
+.pt-16 {
+  padding-top: 4rem;
+}
 .text-left {
   text-align: left;
 }
