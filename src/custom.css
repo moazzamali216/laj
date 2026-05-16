@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&display=swap');
 body {
   
   margin: 0;
@@ -16,26 +16,8 @@ html,body{
   overflow-x: hidden !important;
 
 }
-
-.urb{
-    font-family: "Urbanist", sans-serif;
-  font-optical-sizing: auto;
-  letter-spacing: 2px;
-  font-style: normal;
-}
-.man{
-   font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-
-  font-style: normal;
-}
-.mons{
-    font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-.com{
-    font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
+.urb { font-family: "Urbanist", sans-serif; }
+.man { font-family: "Manrope", sans-serif; }
+.mons { font-family: "Montserrat", sans-serif; }
+.com { font-family: "Cormorant Garamond", serif; }
+.play { font-family: "Playfair Display", serif; }

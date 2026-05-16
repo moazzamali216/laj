@@ -2006,6 +2006,12 @@ input[type="range"]::-ms-fill-lower {
 .font-light {
   font-weight: 300;
 }
+.font-\[Playfair_Display\] {
+  font-weight: Playfair Display;
+}
+.\!font-\[Playfair_Display\] {
+  font-weight: Playfair Display !important;
+}
 .uppercase {
   text-transform: uppercase;
 }
