@@ -20,7 +20,8 @@
 
 <!-- Preloader -->
 <div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
-  <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy" src="./public/images/logo.png" class="w-28 animate-up-pulse" alt="Logo">
+  <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy" src="./public/images/logo.png"
+    class="w-28 animate-up-pulse" alt="Logo">
   <p class="mt-4 text-sm tracking-widest text-gray-500 animate-up-pulse">
     Loading...
   </p>
@@ -43,7 +44,8 @@
           <!-- Logo -->
           <a href="./index.html" class="flex items-center">
 
-            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png" alt="Logo" class="w-28 object-contain">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png" alt="Logo"
+              class="w-28 object-contain">
 
           </a>
 
@@ -185,7 +187,8 @@
         <!-- Logo -->
         <a href="./index.html">
 
-          <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy" src="./public/images/logo.png" class="w-24 object-contain" alt="Logo">
+          <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy" src="./public/images/logo.png"
+            class="w-24 object-contain" alt="Logo">
 
         </a>
 
@@ -219,7 +222,8 @@
     <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
 
       <!-- Logo -->
-      <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png" class="w-24 object-contain" alt="Logo">
+      <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+        class="w-24 object-contain" alt="Logo">
 
       <!-- Close -->
       <button id="closeMenu"
@@ -361,39 +365,43 @@
     <div class="absolute inset-0 z-0">
 
       <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
-        <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600"
-          class="w-full h-full object-cover" alt="Mountain" />
+        <img loading="lazy" decoding="async" fetchpriority="low"
+          src="./public/images/ho3.webp" class="w-full h-full object-cover"
+          alt="Mountain" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
 
       <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
-        <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1600"
-          class="w-full h-full object-cover" alt="Forest" />
+        <img loading="lazy" decoding="async" fetchpriority="low"
+          src="./public/images/ho1.webp" class="w-full h-full object-cover"
+          alt="Forest" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
 
       <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
-        <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600"
-          class="w-full h-full object-cover" alt="Valley" />
+        <img loading="lazy" decoding="async" fetchpriority="low"
+          src="./public/images/ho2.webp" class="w-full h-full object-cover"
+          alt="Valley" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
 
       <div class="slide absolute inset-0 opacity-0 transition-opacity duration-[1500ms] ease-in-out">
-        <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600"
-          class="w-full h-full object-cover" alt="Ocean" />
+        <img loading="lazy" decoding="async" fetchpriority="low"
+          src="./public/images/ho4.webp" class="w-full h-full object-cover"
+          alt="Ocean" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
 
     </div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 mt-24 text-center text-white px-6 max-w-3xl mx-auto">
+    <div class="relative z-10 mt-24 text-center text-white px-6 max-w-3xl mx-auto"> 
 
       <p class="uppercase tracking-[0.3em] text-sm text-white/50 mb-4 font-light">Explore the World</p>
 
       <h1 id="hero-heading"
         class="text-5xl md:text-6xl com font- leading-tight mb-5 transition-all duration-700 ease-out opacity-100 translate-y-0">
-        Global Textile Sourcing Network
+        Reliable Apparel <br> Manufacturing Hub
       </h1>
 
       <p id="hero-desc"
@@ -402,14 +410,14 @@
       </p>
 
       <div class="flex gap-4 justify-center flex-wrap">
-        <button
+        <a href="./contact.html"
           class="px-6 py-2.5 mons bg-white text-black text-sm font-semibold rounded-full hover:bg-white/90 transition">
-          Explore Now
-        </button>
-        <button
+          Contact Now
+      </a>
+        <a href="./about.html"
           class="px-6 py-2.5 mons border border-white/50 text-white text-sm font-medium rounded-full hover:bg-white/10 transition">
           Learn More
-        </button>
+    </a>
       </div>
 
       <!-- Slide Dots -->
@@ -424,55 +432,52 @@
   const desc = document.getElementById("hero-desc");
   const dotsContainer = document.getElementById("dots");
 
-  const content = [
+  const heroContent = [
     {
-      title: "Global Textile <br> Sourcing Network",
-      text: "Connecting international buyers with trusted textile manufacturers across Pakistan."
+      heading: "Reliable Apparel <br> Manufacturing Hub",
+      subtext: "Helping global fashion businesses connect with dependable production partners in Pakistan."
     },
     {
-      title: "Precision in Every <br> Production Step",
-      text: "From sampling to shipment, every order is managed with accuracy and consistency."
+      heading: "Efficient Workflow <br> & Order Management",
+      subtext: "Every stage from development to dispatch is handled with precision and timely coordination."
     },
     {
-      title: "Built on Quality <br> & Compliance",
-      text: "Strict inspections, certified vendors, and transparent supply chains you can rely on."
+      heading: "Trusted Standards <br> Across Production",
+      subtext: "Consistent quality control, verified suppliers, and transparent manufacturing practices."
     },
     {
-      title: "From Fabric to <br> Final Delivery",
-      text: "Seamless sourcing, production, and export solutions tailored for global brands."
+      heading: "Complete Garment <br> Export Solutions",
+      subtext: "End-to-end sourcing and production support designed for international apparel brands."
     }
   ];
 
   let current = 0;
 
-  // Create dots once
-  const dots = content.map((_, i) => {
+  // dots
+  const dots = heroContent.map((_, i) => {
     const dot = document.createElement("button");
 
     dot.className =
       i === 0
-        ? "w-8 h-2 rounded-full bg-white transition-all duration-300"
-        : "w-2 h-2 rounded-full bg-white/40 transition-all duration-300";
+        ? "w-8 h-2 rounded-full bg-white"
+        : "w-2 h-2 rounded-full bg-white/40";
 
-    dot.addEventListener("click", () => goTo(i));
+    dot.onclick = () => goTo(i);
 
     dotsContainer.appendChild(dot);
-
     return dot;
   });
 
-  // Optimized dot update
-  function updateDots(prev, next) {
-    dots[prev].className =
-      "w-2 h-2 rounded-full bg-white/40 transition-all duration-300";
+  function updateUI(index) {
+    heading.innerHTML = heroContent[index].heading;
+    desc.textContent = heroContent[index].subtext;
 
-    dots[next].className =
-      "w-8 h-2 rounded-full bg-white transition-all duration-300";
-  }
-
-  function updateText(index) {
-    heading.innerHTML = content[index].title;
-    desc.textContent = content[index].text;
+    dots.forEach((d, i) => {
+      d.className =
+        i === index
+          ? "w-8 h-2 rounded-full bg-white"
+          : "w-2 h-2 rounded-full bg-white/40";
+    });
   }
 
   function goTo(index) {
@@ -480,53 +485,45 @@
 
     const prev = current;
 
-    // Slide transition
     slides[prev].classList.replace("opacity-100", "opacity-0");
     slides[index].classList.replace("opacity-0", "opacity-100");
 
-    // Text animation
-    heading.classList.add("opacity-0", "translate-y-4");
-    desc.classList.add("opacity-0", "translate-y-4");
+    heading.style.opacity = "0";
+    heading.style.transform = "translateY(10px)";
+    desc.style.opacity = "0";
+    desc.style.transform = "translateY(10px)";
 
-    requestAnimationFrame(() => {
-      setTimeout(() => {
-        updateText(index);
+    setTimeout(() => {
+      updateUI(index);
 
-        heading.classList.remove("opacity-0", "translate-y-4");
-        desc.classList.remove("opacity-0", "translate-y-4");
-      }, 300);
-    });
-
-    updateDots(prev, index);
+      heading.style.opacity = "1";
+      heading.style.transform = "translateY(0)";
+      desc.style.opacity = "1";
+      desc.style.transform = "translateY(0)";
+    }, 300);
 
     current = index;
   }
 
-  // Initial state
+  // init
   slides[0].classList.add("opacity-100");
+  updateUI(0);
 
-  // Lightweight autoplay
-  let interval = setInterval(() => {
+  // autoplay (lightweight)
+  setInterval(() => {
     goTo((current + 1) % slides.length);
-  }, 5000);
+  }, 3000);
 
-  // Pause when tab inactive
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) {
-      clearInterval(interval);
-    } else {
-      interval = setInterval(() => {
-        goTo((current + 1) % slides.length);
-      }, 5000);
-    }
-  });
+  // transitions
+  heading.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+  desc.style.transition = "opacity 0.4s ease, transform 0.4s ease";
 </script>
-
 
   <section class="relative w-full sm:hidden h-screen overflow-hidden flex flex-col items-center justify-end pb-14 px-6">
 
     <!-- Background Image -->
-    <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+    <img loading="lazy" decoding="async" fetchpriority="low"
+      src="./public/images/ho3.webp"
       class="absolute inset-0 w-full h-full object-cover object-center" alt="Hero background" />
 
     <!-- Dark Gradient Overlay — heavier at bottom for text legibility -->
@@ -1147,7 +1144,8 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=1200"
+            <img loading="lazy" decoding="async" fetchpriority="low"
+              src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=1200"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Home Textiles">
           </div>
 
@@ -1178,7 +1176,8 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200"
+            <img loading="lazy" decoding="async" fetchpriority="low"
+              src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
               alt="Institutional Textiles">
           </div>
@@ -1210,7 +1209,8 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1520975958225-0a9c5c1a0f2c?w=1200"
+            <img loading="lazy" decoding="async" fetchpriority="low"
+              src="https://images.unsplash.com/photo-1520975958225-0a9c5c1a0f2c?w=1200"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
               alt="Healthcare Textiles">
           </div>
@@ -1242,7 +1242,8 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=1200"
+            <img loading="lazy" decoding="async" fetchpriority="low"
+              src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=1200"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Bath Linen">
           </div>
 
@@ -1273,7 +1274,8 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd49?w=1200"
+            <img loading="lazy" decoding="async" fetchpriority="low"
+              src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd49?w=1200"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Apparels">
           </div>
 
@@ -1304,7 +1306,8 @@
           class="group bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-lg transition duration-500">
 
           <div class="h-60 overflow-hidden">
-            <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1602810316498-ab67cf68c8e4?w=1200"
+            <img loading="lazy" decoding="async" fetchpriority="low"
+              src="https://images.unsplash.com/photo-1602810316498-ab67cf68c8e4?w=1200"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Custom Sourcing">
           </div>
 
@@ -1371,39 +1374,48 @@
         <div class="swiper-wrapper items-center">
 
           <div class="swiper-slide flex justify-center">
-            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s1.png" class="h-24 object-contain" alt="certification">
+            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s1.png"
+              class="h-24 object-contain" alt="certification">
           </div>
 
           <div class="swiper-slide flex justify-center">
-            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s2.png" class="h-24 object-contain" alt="certification">
+            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s2.png"
+              class="h-24 object-contain" alt="certification">
           </div>
 
           <div class="swiper-slide flex justify-center">
-            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s3.png" class="h-24 object-contain" alt="certification">
+            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s3.png"
+              class="h-24 object-contain" alt="certification">
           </div>
 
           <div class="swiper-slide flex justify-center">
-            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s4.png" class="h-24 object-contain" alt="certification">
+            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s4.png"
+              class="h-24 object-contain" alt="certification">
           </div>
 
           <div class="swiper-slide flex justify-center">
-            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s5.png" class="h-24 object-contain" alt="certification">
+            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s5.png"
+              class="h-24 object-contain" alt="certification">
           </div>
 
           <div class="swiper-slide flex justify-center">
-            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s6.png" class="h-24 object-contain" alt="certification">
+            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s6.png"
+              class="h-24 object-contain" alt="certification">
           </div>
 
           <div class="swiper-slide flex justify-center">
-            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s7.png" class="h-24 object-contain" alt="certification">
+            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s7.png"
+              class="h-24 object-contain" alt="certification">
           </div>
 
           <div class="swiper-slide flex justify-center">
-            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s8.png" class="h-24 object-contain" alt="certification">
+            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s8.png"
+              class="h-24 object-contain" alt="certification">
           </div>
 
           <div class="swiper-slide flex justify-center">
-            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s9.png" class="h-24 object-contain" alt="certification">
+            <img loading="lazy" decoding="async" fetchpriority="low" loading='lazy' src="./public/images/s9.png"
+              class="h-24 object-contain" alt="certification">
           </div>
 
         </div>
@@ -1443,7 +1455,8 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
+          <img loading="lazy" decoding="async" fetchpriority="low"
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
             class="h-44 w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1462,7 +1475,8 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+          <img loading="lazy" decoding="async" fetchpriority="low"
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
             class="h-44 w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1480,7 +1494,8 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80"
+          <img loading="lazy" decoding="async" fetchpriority="low"
+            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80"
             class="h-44 w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1498,7 +1513,8 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
+          <img loading="lazy" decoding="async" fetchpriority="low"
+            src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
             class="h-44 w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1516,7 +1532,8 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1581091870627-3b3b3b3b3b3b?auto=format&fit=crop&w=1200&q=80"
+          <img loading="lazy" decoding="async" fetchpriority="low"
+            src="https://images.unsplash.com/photo-1581091870627-3b3b3b3b3b3b?auto=format&fit=crop&w=1200&q=80"
             class="h-44 w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1534,7 +1551,8 @@
         <div
           class="group bg-[#f8f7f5] border border-neutral-200 rounded-3xl overflow-hidden hover:shadow-xl transition duration-500">
 
-          <img loading="lazy" decoding="async" fetchpriority="low" src="https://images.unsplash.com/photo-1581091012184-5c2b2c7f2b1c?auto=format&fit=crop&w=1200&q=80"
+          <img loading="lazy" decoding="async" fetchpriority="low"
+            src="https://images.unsplash.com/photo-1581091012184-5c2b2c7f2b1c?auto=format&fit=crop&w=1200&q=80"
             class="h-44 w-full object-cover group-hover:scale-105 transition duration-500">
 
           <div class="p-8">
@@ -1698,8 +1716,8 @@
         <div class="lg:col-span-4 flex flex-col gap-4">
 
           <a href="./index.html">
-            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png" style="  filter: invert(1);" alt="LAJ Logo"
-              class="w-24 object-contain opacity-90 brightness-200">
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+              style="  filter: invert(1);" alt="LAJ Logo" class="w-24 object-contain opacity-90 brightness-200">
           </a>
 
           <p class="text-sm text-gray-400 man leading-relaxed max-w-xs">
