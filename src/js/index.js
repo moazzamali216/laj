@@ -19,12 +19,11 @@ window.addEventListener("load", function () {
       navbar.classList.add("top-0");
       navbar.classList.remove("top-5");
 
-      navbar.classList.add("scale-[0.98]");
+
     } else {
       navbar.classList.remove("top-0");
       navbar.classList.add("top-5");
 
-      navbar.classList.remove("scale-[0.98]");
     }
   });
 
