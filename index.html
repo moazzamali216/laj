@@ -418,134 +418,109 @@
     </div>
 
   </section>
+<script>
+  const slides = document.querySelectorAll(".slide");
+  const heading = document.getElementById("hero-heading");
+  const desc = document.getElementById("hero-desc");
+  const dotsContainer = document.getElementById("dots");
 
-  <!-- SCRIPT -->
-  <script>
+  const content = [
+    {
+      title: "Global Textile <br> Sourcing Network",
+      text: "Connecting international buyers with trusted textile manufacturers across Pakistan."
+    },
+    {
+      title: "Precision in Every <br> Production Step",
+      text: "From sampling to shipment, every order is managed with accuracy and consistency."
+    },
+    {
+      title: "Built on Quality <br> & Compliance",
+      text: "Strict inspections, certified vendors, and transparent supply chains you can rely on."
+    },
+    {
+      title: "From Fabric to <br> Final Delivery",
+      text: "Seamless sourcing, production, and export solutions tailored for global brands."
+    }
+  ];
 
-    const slides = document.querySelectorAll('.slide');
-    const heading = document.getElementById('hero-heading');
-    const desc = document.getElementById('hero-desc');
-    const dotsContainer = document.getElementById('dots');
+  let current = 0;
 
-    const content = [
-      {
-        title: 'Global Textile <br> Sourcing Network',
-        text: 'Connecting international buyers with trusted textile manufacturers across Pakistan.'
-      },
-      {
-        title: 'Precision in Every <br> Production Step',
-        text: 'From sampling to shipment, every order is managed with accuracy and consistency.'
-      },
-      {
-        title: 'Built on Quality <br> & Compliance',
-        text: 'Strict inspections, certified vendors, and transparent supply chains you can rely on.'
-      },
-      {
-        title: 'From Fabric to <br> Final Delivery',
-        text: 'Seamless sourcing, production, and export solutions tailored for global brands.'
-      },
-    ];
+  // Create dots once
+  const dots = content.map((_, i) => {
+    const dot = document.createElement("button");
 
-    let current = 0;
+    dot.className =
+      i === 0
+        ? "w-8 h-2 rounded-full bg-white transition-all duration-300"
+        : "w-2 h-2 rounded-full bg-white/40 transition-all duration-300";
 
-    // Create dots
-    content.forEach((_, i) => {
+    dot.addEventListener("click", () => goTo(i));
 
-      const dot = document.createElement('button');
+    dotsContainer.appendChild(dot);
 
-      dot.className =
-        `w-2 h-2 rounded-full transition-all duration-300 ${i === 0
-          ? 'bg-white w-8'
-          : 'bg-white/40'
-        }`;
+    return dot;
+  });
 
-      dot.addEventListener('click', () => goTo(i));
+  // Optimized dot update
+  function updateDots(prev, next) {
+    dots[prev].className =
+      "w-2 h-2 rounded-full bg-white/40 transition-all duration-300";
 
-      dotsContainer.appendChild(dot);
+    dots[next].className =
+      "w-8 h-2 rounded-full bg-white transition-all duration-300";
+  }
 
+  function updateText(index) {
+    heading.innerHTML = content[index].title;
+    desc.textContent = content[index].text;
+  }
+
+  function goTo(index) {
+    if (index === current) return;
+
+    const prev = current;
+
+    // Slide transition
+    slides[prev].classList.replace("opacity-100", "opacity-0");
+    slides[index].classList.replace("opacity-0", "opacity-100");
+
+    // Text animation
+    heading.classList.add("opacity-0", "translate-y-4");
+    desc.classList.add("opacity-0", "translate-y-4");
+
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        updateText(index);
+
+        heading.classList.remove("opacity-0", "translate-y-4");
+        desc.classList.remove("opacity-0", "translate-y-4");
+      }, 300);
     });
 
-    // Update dots
-    function updateDots(index) {
+    updateDots(prev, index);
 
-      dotsContainer.querySelectorAll('button').forEach((dot, i) => {
+    current = index;
+  }
 
-        dot.className =
-          `w-2 h-2 rounded-full transition-all duration-300 ${i === index
-            ? 'bg-white w-8'
-            : 'bg-white/40'
-          }`;
+  // Initial state
+  slides[0].classList.add("opacity-100");
 
-      });
+  // Lightweight autoplay
+  let interval = setInterval(() => {
+    goTo((current + 1) % slides.length);
+  }, 5000);
 
+  // Pause when tab inactive
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      clearInterval(interval);
+    } else {
+      interval = setInterval(() => {
+        goTo((current + 1) % slides.length);
+      }, 5000);
     }
-
-    // Fade out
-    function fadeOutText() {
-
-      heading.classList.remove('opacity-100', 'translate-y-0');
-      heading.classList.add('opacity-0', 'translate-y-6');
-
-      desc.classList.remove('opacity-100', 'translate-y-0');
-      desc.classList.add('opacity-0', 'translate-y-6');
-
-    }
-
-    // Fade in
-    function fadeInText(index) {
-
-      heading.innerHTML = content[index].title;
-      desc.textContent = content[index].text;
-
-      setTimeout(() => {
-
-        heading.classList.remove('opacity-0', 'translate-y-6');
-        heading.classList.add('opacity-100', 'translate-y-0');
-
-        desc.classList.remove('opacity-0', 'translate-y-6');
-        desc.classList.add('opacity-100', 'translate-y-0');
-
-      }, 100);
-
-    }
-
-    // Change slide
-    function goTo(index) {
-
-      slides[current].classList.remove('opacity-100');
-      slides[current].classList.add('opacity-0');
-
-      fadeOutText();
-
-      current = index;
-
-      setTimeout(() => {
-
-        slides[current].classList.remove('opacity-0');
-        slides[current].classList.add('opacity-100');
-
-        fadeInText(current);
-
-        updateDots(current);
-
-      }, 700);
-
-    }
-
-    // Initial
-    slides[0].classList.add('opacity-100');
-
-    // Auto slide
-    setInterval(() => {
-
-      const next = (current + 1) % slides.length;
-
-      goTo(next);
-
-    }, 5000);
-
-  </script>
-
+  });
+</script>
 
 
   <section class="relative w-full sm:hidden h-screen overflow-hidden flex flex-col items-center justify-end pb-14 px-6">
