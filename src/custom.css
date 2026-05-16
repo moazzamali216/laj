@@ -21,3 +21,7 @@ html,body{
 .mons { font-family: "Montserrat", sans-serif; }
 .com { font-family: "Cormorant Garamond", serif; }
 .play { font-family: "Playfair Display", serif; }
+
+nav{
+  transition: all .25s ease-in-out;
+}
