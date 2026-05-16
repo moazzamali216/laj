@@ -12,20 +12,20 @@ window.addEventListener("load", function () {
 });
 
 
-  const navbar = document.querySelector("nav");
+const navbar = document.querySelector("nav");
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 10) {
-      navbar.classList.add("top-0");
-      navbar.classList.remove("top-5");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+    navbar.classList.add("top-0");
+    navbar.classList.remove("top-5");
 
 
-    } else {
-      navbar.classList.remove("top-0");
-      navbar.classList.add("top-5");
+  } else {
+    navbar.classList.remove("top-0");
+    navbar.classList.add("top-5");
 
-    }
-  });
+  }
+});
 
 
 const swiper = new Swiper(".mySwiper", {
@@ -45,54 +45,54 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 
-  const openMenu = document.getElementById("openMenu");
-  const closeMenu = document.getElementById("closeMenu");
-  const sideMenu = document.getElementById("sideMenu");
-  const overlay = document.getElementById("overlay");
+const openMenu = document.getElementById("openMenu");
+const closeMenu = document.getElementById("closeMenu");
+const sideMenu = document.getElementById("sideMenu");
+const overlay = document.getElementById("overlay");
 
-  // Open Menu
-  openMenu.addEventListener("click", () => {
+// Open Menu
+openMenu.addEventListener("click", () => {
 
-    sideMenu.classList.remove("translate-x-full");
+  sideMenu.classList.remove("translate-x-full");
 
-    overlay.classList.remove("hidden");
+  overlay.classList.remove("hidden");
 
-    setTimeout(() => {
-      overlay.classList.remove("opacity-0");
-    }, 10);
+  setTimeout(() => {
+    overlay.classList.remove("opacity-0");
+  }, 10);
 
-  });
+});
 
-  // Close Function
-  function closeSidebar() {
+// Close Function
+function closeSidebar() {
 
-    sideMenu.classList.add("translate-x-full");
+  sideMenu.classList.add("translate-x-full");
 
-    overlay.classList.add("opacity-0");
+  overlay.classList.add("opacity-0");
 
-    setTimeout(() => {
-      overlay.classList.add("hidden");
-    }, 300);
+  setTimeout(() => {
+    overlay.classList.add("hidden");
+  }, 300);
 
-  }
+}
 
-  // Close Events
-  closeMenu.addEventListener("click", closeSidebar);
+// Close Events
+closeMenu.addEventListener("click", closeSidebar);
 
-  overlay.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
 
-  // Products Toggle
-  const productToggle = document.getElementById("productToggle");
-  const productMenu = document.getElementById("productMenu");
-  const productArrow = document.getElementById("productArrow");
+// Products Toggle
+const productToggle = document.getElementById("productToggle");
+const productMenu = document.getElementById("productMenu");
+const productArrow = document.getElementById("productArrow");
 
-  productToggle.addEventListener("click", () => {
+productToggle.addEventListener("click", () => {
 
-    productMenu.classList.toggle("hidden");
+  productMenu.classList.toggle("hidden");
 
-    productArrow.classList.toggle("rotate-180");
+  productArrow.classList.toggle("rotate-180");
 
-  });
+});
 
 
 
@@ -151,3 +151,64 @@ document.querySelectorAll('[data-tabs-target]').forEach(tab => {
 
   });
 });
+
+
+
+let current = 0;
+const total = 8;
+
+function changeStep(dir) {
+  const next = current + dir;
+  if (next < 0 || next >= total) return;
+  goToStep(next);
+}
+
+function goToStep(index) {
+  document.getElementById('content-' + current).classList.add('hidden');
+
+  const prevDot = document.querySelectorAll('.stepper-dot')[current];
+  const prevIcon = prevDot.querySelector('i');
+  const prevLabel = document.querySelectorAll('.stepper-label')[current];
+  prevDot.classList.remove('bg-[#2d2a26]', 'border-[#2d2a26]');
+  prevDot.classList.add('border-gray-200', 'bg-white');
+  prevIcon.classList.remove('text-white');
+  prevIcon.classList.add('text-gray-300');
+  if (prevLabel) { prevLabel.classList.remove('text-[#2d2a26]', 'font-semibold'); prevLabel.classList.add('text-gray-400'); }
+
+  current = index;
+
+  document.getElementById('content-' + current).classList.remove('hidden');
+
+  const newDot = document.querySelectorAll('.stepper-dot')[current];
+  const newIcon = newDot.querySelector('i');
+  const newLabel = document.querySelectorAll('.stepper-label')[current];
+  newDot.classList.add('bg-[#2d2a26]', 'border-[#2d2a26]');
+  newDot.classList.remove('border-gray-200', 'bg-white');
+  newIcon.classList.add('text-white');
+  newIcon.classList.remove('text-gray-300');
+  if (newLabel) { newLabel.classList.add('text-[#2d2a26]', 'font-semibold'); newLabel.classList.remove('text-gray-400'); }
+
+  const linePercent = (current / (total - 1)) * 100;
+  document.getElementById('active-line').style.width = linePercent + '%';
+
+  document.getElementById('step-counter').textContent = 'Step ' + (current + 1) + ' of ' + total;
+
+  document.getElementById('btn-prev').disabled = current === 0;
+  document.getElementById('btn-prev').style.opacity = current === 0 ? '0.3' : '1';
+
+  if (current === total - 1) {
+    document.getElementById('btn-next').innerHTML = '<i class="fa-solid fa-check text-xs"></i> Done';
+    document.getElementById('btn-next').disabled = true;
+    document.getElementById('btn-next').style.opacity = '0.5';
+  } else {
+    document.getElementById('btn-next').innerHTML = 'Next <i class="fa-solid fa-arrow-right text-xs"></i>';
+    document.getElementById('btn-next').disabled = false;
+    document.getElementById('btn-next').style.opacity = '1';
+  }
+}
+
+document.querySelectorAll('.stepper-item').forEach(item => {
+  item.addEventListener('click', () => goToStep(parseInt(item.dataset.step)));
+});
+
+goToStep(0);
