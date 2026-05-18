@@ -1820,9 +1820,6 @@ input[type="range"]::-ms-fill-lower {
 .font-\[\'Raleway\'\] {
   font-family: 'Raleway';
 }
-.font-\[\'_Display\'\] {
-  font-family: 'Fairplay Display';
-}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
