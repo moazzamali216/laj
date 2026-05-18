@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAJ - Home Textiles</title>
+    <link rel="Icon" href="./public/images/app-logo.png" type="image/x-icon">
+
+    <!-- External CSsS -->
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./src/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+    <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy" src="./public/images/logo.png"
+        class="w-28 animate-up-pulse" alt="Logo">
+    <p class="mt-7 text-sm tracking-widest text-gray-500 animate-up-pulse">
+    <div class="w-8 h-8 border-4 border-gray-200 border-t-black rounded-full animate-spin"></div>
+    </p>
+</div>
+
+<body class=" bg-gray-50">
+    <!-- Desktop Navbar -->
+    <!-- Minimal Luxury Navbar -->
+    <nav class="hidden lg:block  fixed top-5 left-0 w-full z-50">
+
+        <!-- Side Gaps -->
+        <div class="max-w-7xl mx-auto px-5">
+
+            <!-- Navbar Container -->
+            <div class="bg-[#f8f7f5]/90  shadow-md backdrop-blur-md border border-neutral-200 rounded-[26px] ">
+
+                <!-- Top Area -->
+                <div class="flex items-center justify-between px-8 py-2.5  border-neutral-200">
+
+                    <!-- Logo -->
+                    <a href="./index.html" class="flex items-center">
+
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            alt="Logo" class="w-28 object-contain">
+
+                    </a>
+
+
+                    <!-- Nav Links -->
+                    <ul class="flex items-center gap-12 text-[12px] tracking-[0.175em] uppercase text-gray-500">
+
+                        <!-- Active -->
+                        <li class="relative">
+
+                            <a href="./index.html" class="hover:text-neutral-900 transition duration-300">
+                                Home
+                            </a>
+
+
+
+                        </li>
+
+                        <li>
+                            <a href="./about.html" class="hover:text-neutral-900 transition duration-300">
+                                About
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="./services.html" class="hover:text-neutral-900 transition duration-300">
+                                Services
+                            </a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="relative">
+
+                            <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+                                data-dropdown-placement="bottom-start"
+                                class="flex text-[12px] tracking-[0.175em] uppercase text-gray-500  items-center gap-1 hover:text-neutral-900 transition duration-300">
+
+                                Products
+
+                                <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <!-- Dropdown Container -->
+                            <div id="dropdownProducts"
+                                class="hidden absolute top-12 left-0 w-60 bg-white border border-neutral-200 rounded-2xl shadow-lg overflow-hidden">
+                                <ul class=" text-[11px] tracking-[0.175em] uppercase text-gray-500  ">
+                                    <li> <a href="./hometextiles.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Home
+                                            Textiles </a>
+                                    </li>
+                                    <li> <a href="./hospital.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Institutional
+                                            Textiles </a> </li>
+                                    <li> <a href="./healthcare.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Healthcare
+                                            Textiles
+                                        </a> </li>
+                                    <li> <a href="./terrytowels.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Bath Linen
+                                        </a>
+                                    </li>
+                                    <li> <a href="./apparels.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Apparels
+                                        </a> </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="./sustainability.html" class="hover:text-neutral-900 transition duration-300">
+                                Sustainability
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./public/pdfs/Laj.pdf" download
+                                class="hover:text-neutral-900 transition duration-300">
+                                E-Brochure
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Contact -->
+                    <a href="./contact.html"
+                        class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
+
+                        <span class="w-10 h-px bg-neutral-900"></span>
+
+                        <span class="text-[14px] uppercase tracking-wide font-medium man">
+                            Contact Us
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ========================= -->
+    <!-- Mobile Luxury Navbar -->
+    <!-- ========================= -->
+
+    <!-- Top Navbar -->
+    <nav class="lg:hidden fixed top-5 left-0 w-full z-[999]">
+
+        <div class="px-4">
+
+            <div
+                class="bg-[#f8f7f5]/90 backdrop-blur-md border border-neutral-200 rounded-2xl px-5 py-4 flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="./index.html">
+
+                    <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy"
+                        src="./public/images/logo.png" class="w-24 object-contain" alt="Logo">
+
+                </a>
+
+                <!-- Menu Button -->
+                <button id="openMenu"
+                    class="w-11 h-11 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                            d="M4 6h16M4 12h16M4 18h16" />
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay"
+        class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-[998] opacity-0 transition duration-300">
+    </div>
+
+    <!-- Side Menu -->
+    <div id="sideMenu"
+        class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
+
+            <!-- Logo -->
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                class="w-24 object-contain" alt="Logo">
+
+            <!-- Close -->
+            <button id="closeMenu"
+                class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+
+                ✕
+
+            </button>
+
+        </div>
+
+        <!-- Menu Links -->
+        <div class="flex-1 overflow-y-auto px-6 py-8">
+
+            <ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 man">
+
+                <li>
+                    <a href="./index.html" class="flex items-center justify-between hover:text-neutral-900 transition">
+
+                        Home
+
+                        <span class="w-8 h-px bg-neutral-900"></span>
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./about.html" class="hover:text-neutral-900 transition block">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./services.html" class="hover:text-neutral-900 transition block">
+                        Services
+                    </a>
+                </li>
+
+                <!-- Products -->
+                <li>
+
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
+
+                        <!-- Products Heading -->
+                        <button id="productToggle"
+                            class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
+
+                            <span>Products</span>
+
+                            <svg id="productArrow" xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 transition duration-300" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                                    d="M19 9l-7 7-7-7" />
+
+                            </svg>
+
+                        </button>
+
+                        <!-- Dropdown -->
+                        <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
+
+                            <ul class="space-y-4 text-[14px] text-neutral-600">
+
+                                <li>
+                                    <a href="./hometextiles.html" class="block hover:text-neutral-900 transition">
+                                        Home Textiles
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./hospital.html" class="block hover:text-neutral-900 transition">
+                                        Institutional Textiles
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./healthcare.html" class="block hover:text-neutral-900 transition">
+                                        Healthcare Textiles
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./terrytowels.html" class="block hover:text-neutral-900 transition">
+                                        Bath Linen
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./apparels.html" class="block hover:text-neutral-900 transition">
+                                        Apparels
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="./sustainability.html" class="hover:text-neutral-900 transition block">
+                        Sustainability
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./public/pdfs/Laj.pdf" download class="hover:text-neutral-900 transition block">
+                        E-Brochure
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Bottom Button -->
+        <div class="p-6 border-t border-neutral-200">
+
+            <a href="./contact.html"
+                class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 man">
+
+                <span class="w-8 h-px bg-current"></span>
+
+                Contact Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <section class="relative h-[500px]  flex items-center justify-center overflow-hidden">
+
+        <!-- Background Image -->
+        <img loading='lazy' decoding="async" fetchpriority="low" src="./public/images/co1.webp"
+            class="absolute inset-0 w-full h-full object-cover" alt="About LAJ">
+
+        <!-- Black Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/20"></div>
+
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4">
+
+            <h1 class="text-5xl md:text-5xl translate-y-[50px] font-['Playfair_Display'] text-white">
+                Home Textiles
+            </h1>
+
+        </div>
+
+    </section>
+
+    <section class="bg-[#f7f6f4] py-20 relative overflow-hidden">
+
+        <!-- glow -->
+        <div class="absolute -top-20 left-0 w-96 h-96 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-14">
+                <p class="tracking-[0.35em] text-sm text-gray-500 mons mb-4">
+                    EXCEPTIONAL TEXTILE COLLECTIONS
+                </p>
+
+                <p class="text-base text-[#6e6a5e] mons leading-relaxed text-center max-w-4xl mx-auto">
+                    Whether you're styling a calm bedroom, a busy kitchen, an elegant dining space, or a demanding
+                    industrial setting, our linen collections bring together lasting comfort, strength, and timeless
+                    design. From premium bedding and durable kitchen textiles to sophisticated event linens and
+                    heavy-duty industrial fabrics, every piece is thoughtfully made with high-quality materials, precise
+                    craftsmanship, and global certifications such as OEKO TEX® and ISO — ensuring reliable performance,
+                    wash after wash.
+                </p>
+
+                <h2 class="text-4xl mt-10 md:text-5xl font-['Playfair_Display'] text-[#2d2a26]">
+                    The Art of <span class="tcolor">Linen Living</span>
+                </h2>
+            </div>
+
+            <!-- GRID CARDS (TABS) -->
+            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4 mb-14" id="linenTabs"
+                data-tabs-toggle="#linenTabContent" role="tablist">
+
+                <li role="presentation">
+                    <div id="bed-tab" data-tabs-target="#bed" role="tab"
+                        class="relative cursor-pointer rounded-2xl overflow-hidden group">
+
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/co1.webp"
+                            class="w-full h-[300px] object-cover transition duration-500 group-hover:scale-110"
+                            alt="Bedding Linen" />
+
+                        <div class="absolute inset-0"
+                            style="background: linear-gradient(to top, rgba(20,17,14,0.65) 0%, rgba(20,17,14,0.2) 55%, transparent 100%);">
+                        </div>
+
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <span
+                                class="inline-block text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full mb-2"
+                                style="background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); border: 0.5px solid rgba(255,255,255,0.25);">
+                                Bedroom
+                            </span>
+                            <h3 class="text-[15px] font-['Playfair_Display'] text-white m-0 mb-1">Bedding Linen</h3>
+                            <p class="text-[11px] text-white/70 m-0 leading-snug mons">Premium sets for comfort and
+                                elegance.</p>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li role="presentation">
+                    <div id="thermal-blankets" data-tabs-target="#thermalblankets" role="tab"
+                        class="relative cursor-pointer rounded-2xl overflow-hidden group">
+
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/co1.webp"
+                            class="w-full h-[300px] object-cover transition duration-500 group-hover:scale-110"
+                            alt="Thermal Blankets" />
+
+                        <div class="absolute inset-0"
+                            style="background: linear-gradient(to top, rgba(20,17,14,0.65) 0%, rgba(20,17,14,0.2) 55%, transparent 100%);">
+                        </div>
+
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <span
+                                class="inline-block text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full mb-2"
+                                style="background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); border: 0.5px solid rgba(255,255,255,0.25);">
+                                Warmth
+                            </span>
+                            <h3 class="text-[15px] font-['Playfair_Display'] text-white m-0 mb-1">Thermal Blankets</h3>
+                            <p class="text-[11px] text-white/70 m-0 leading-snug mons">Ultimate warmth and cozy comfort.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li role="presentation">
+                    <div id="mattress-covers" data-tabs-target="#mattresscovers" role="tab"
+                        class="relative cursor-pointer rounded-2xl overflow-hidden group">
+
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/co1.webp"
+                            class="w-full h-[300px] object-cover transition duration-500 group-hover:scale-110"
+                            alt="Mattress Covers" />
+
+                        <div class="absolute inset-0"
+                            style="background: linear-gradient(to top, rgba(20,17,14,0.65) 0%, rgba(20,17,14,0.2) 55%, transparent 100%);">
+                        </div>
+
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <span
+                                class="inline-block text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full mb-2"
+                                style="background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); border: 0.5px solid rgba(255,255,255,0.25);">
+                                Protection
+                            </span>
+                            <h3 class="text-[15px] font-['Playfair_Display'] text-white m-0 mb-1">Mattress Covers</h3>
+                            <p class="text-[11px] text-white/70 m-0 leading-snug mons">Hygiene, protection and sleep
+                                comfort.</p>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li role="presentation">
+                    <div id="table-tab" data-tabs-target="#table" role="tab"
+                        class="relative cursor-pointer rounded-2xl overflow-hidden group">
+
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/hmt3.webp"
+                            class="w-full h-[300px] object-cover transition duration-500 group-hover:scale-110"
+                            alt="Table Linen" />
+
+                        <div class="absolute inset-0"
+                            style="background: linear-gradient(to top, rgba(20,17,14,0.65) 0%, rgba(20,17,14,0.2) 55%, transparent 100%);">
+                        </div>
+
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <span
+                                class="inline-block text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full mb-2"
+                                style="background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); border: 0.5px solid rgba(255,255,255,0.25);">
+                                Dining
+                            </span>
+                            <h3 class="text-[15px] font-['Playfair_Display'] text-white m-0 mb-1">Table Linen</h3>
+                            <p class="text-[11px] text-white/70 m-0 leading-snug mons">Elegant textiles for hotels and
+                                events.</p>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li role="presentation">
+                    <div id="comfort-sets" data-tabs-target="#comfortsets" role="tab"
+                        class="relative cursor-pointer rounded-2xl overflow-hidden group">
+
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/hmt22.webp"
+                            class="w-full h-[300px] object-cover transition duration-500 group-hover:scale-110"
+                            alt="Comforter Sets" />
+
+                        <div class="absolute inset-0"
+                            style="background: linear-gradient(to top, rgba(20,17,14,0.65) 0%, rgba(20,17,14,0.2) 55%, transparent 100%);">
+                        </div>
+
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <span
+                                class="inline-block text-[10px] font-medium tracking-widest uppercase px-2.5 py-1 rounded-full mb-2"
+                                style="background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); border: 0.5px solid rgba(255,255,255,0.25);">
+                                Comfort
+                            </span>
+                            <h3 class="text-[15px] font-['Playfair_Display'] text-white m-0 mb-1">Comforter Sets</h3>
+                            <p class="text-[11px] text-white/70 m-0 leading-snug mons">Warmth and elegance for every
+                                bedroom.</p>
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- CONTENT -->
+            <div id="linenTabContent" class="bg-white rounded-2xl shadow-sm p">
+
+                <div class="hidden text-center" id="bed">
+                    <div class="bg-[#f7f6f4] py-24 relative overflow-hidden" id="home-textiles">
+
+                        <!-- background effects -->
+                        <div class="absolute -top-32 left-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl">
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-0 w-[32rem] h-[32rem] bg-emerald-200/20 rounded-full blur-3xl">
+                        </div>
+
+                        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+                            <!-- HEADER -->
+                            <div class="text-center mb-20">
+                                <p class="tracking-[0.35em] text-sm text-gray-500 font-['Playfair_Display'] mb-4">
+                                    HOME TEXTILE DIVISION
+                                </p>
+
+                                <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26]">
+                                    Complete <span class="tcolor">Home Textile</span> Solutions
+                                </h2>
+
+                                <p class="mt-6 max-w-3xl mx-auto text-[#6e6a5e] mons leading-relaxed">
+                                    From bedding essentials to decorative furnishings, LAJ delivers premium home
+                                    textile solutions
+                                    engineered for comfort, durability, and global retail standards.
+                                </p>
+                            </div>
+
+                            <!-- 1. BEDSHEETS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- Image -->
+                                <div class="relative rounded-2xl overflow-hidden h-[450px]">
+                                    <img src="./public/images/co1.webp" class="w-full object-cover h-full"
+                                        loading="lazy" decoding="async" fetchpriority="low" />
+                                    <div class="absolute inset-0"
+                                        style="background: linear-gradient(to top, rgba(20,17,14,0.45) 0%, transparent 60%);">
+                                    </div>
+                                    <div class="absolute bottom-5 left-5">
+                                        <span
+                                            class="text-[10px] font-medium tracking-widest uppercase px-3 py-1.5 rounded-full mons"
+                                            style="background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.95); border: 0.5px solid rgba(255,255,255,0.3);">
+                                            Premium Bedding
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="flex flex-col justify-start">
+
+                                    <!-- Label -->
+                                    <span
+                                        class="text-xs font-medium tracking-widest text-start uppercase text-[#9ca3af] mons mb-3">
+                                        Bedding Collection
+                                    </span>
+
+                                    <!-- Title -->
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-start text-[#2d2a26] mb-4 leading-snug">
+                                        Bedsheets & Flat Sheets
+                                    </h3>
+
+                                    <!-- Divider -->
+                                    <div class="w-10 h-[2px] bg-[#d1d5db] mb-5 rounded-full"></div>
+
+                                    <!-- Description -->
+                                    <p class="mons text-[#6e6a5e] text-start leading-relaxed mb-3 text-sm">
+                                        We specialize in exporting premium bedsheets and flat sheets crafted from 100%
+                                        cotton, pure linen, and blended poly-cotton fabrics — available in dyed or
+                                        printed finishes with fully customizable piping.
+                                    </p>
+                                    <p class="mons text-[#6e6a5e] text-start leading-relaxed mb-5 text-sm">
+                                        Engineered for luxury hospitality, our linens feature a smooth, soft hand-feel
+                                        and are supplied in solid white, solid color, or custom-printed variations —
+                                        tailored to your exact stitch and finish requirements.
+                                    </p>
+
+                                    <!-- Thread Count Badges -->
+                                    <div class="mb-5">
+                                        <p
+                                            class="text-xs text-start font-medium tracking-widest uppercase text-[#9ca3af] mons mb-2">
+                                            Thread Counts
+                                        </p>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span
+                                                class="text-xs mons px-3 py-1 rounded-full bg-[#f3f4f6] text-[#4b5563] border border-[#e5e7eb]">TC
+                                                130</span>
+                                            <span
+                                                class="text-xs mons px-3 py-1 rounded-full bg-[#f3f4f6] text-[#4b5563] border border-[#e5e7eb]">TC
+                                                180</span>
+                                            <span
+                                                class="text-xs mons px-3 py-1 rounded-full bg-[#f3f4f6] text-[#4b5563] border border-[#e5e7eb]">TC
+                                                200</span>
+                                            <span
+                                                class="text-xs mons px-3 py-1 rounded-full bg-[#f3f4f6] text-[#4b5563] border border-[#e5e7eb]">TC
+                                                250</span>
+                                            <span
+                                                class="text-xs mons px-3 py-1 rounded-full bg-[#f3f4f6] text-[#4b5563] border border-[#e5e7eb]">TC
+                                                300</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Fabric Constructs -->
+                                    <div>
+                                        <p
+                                            class="text-xs font-medium tracking-widest text-start uppercase text-[#9ca3af] mons mb-3">
+                                            Available Fabric Constructs
+                                        </p>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center gap-2.5 text-sm text-[#6e6a5e] mons">
+                                                <span
+                                                    class="w-1.5 h-1.5 rounded-full bg-[#9ca3af] flex-shrink-0"></span>
+                                                Standard plain weave
+                                            </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-[#6e6a5e] mons">
+                                                <span
+                                                    class="w-1.5 h-1.5 rounded-full bg-[#9ca3af] flex-shrink-0"></span>
+                                                Brushed finish for enhanced thermal comfort
+                                            </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-[#6e6a5e] mons">
+                                                <span
+                                                    class="w-1.5 h-1.5 rounded-full bg-[#9ca3af] flex-shrink-0"></span>
+                                                High-sheen satin weave
+                                            </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-[#6e6a5e] mons">
+                                                <span
+                                                    class="w-1.5 h-1.5 rounded-full bg-[#9ca3af] flex-shrink-0"></span>
+                                                Lightweight breathable open weave
+                                            </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-[#6e6a5e] mons">
+                                                <span
+                                                    class="w-1.5 h-1.5 rounded-full bg-[#9ca3af] flex-shrink-0"></span>
+                                                Satin weave with ribbed stripe detailing
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- 2. FITTED SHEETS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Fitted Sheets
+                                    </h3>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Premium fitted sheets designed for a secure fit and long-lasting mattress
+                                        protection.
+                                        Available in <strong>T-128 to T-300</strong> thread counts using
+                                        <strong>100% Cotton, Poly-Cotton (52:48 / 65:35), and CVC, MicroFibre 75 GSM -
+                                            200 GSM</strong>.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Ideal for both retail and institutional use, with easy-care fabrics that
+                                        maintain
+                                        freshness through repeated washing cycles.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Offered in solid colors with custom options available. White remains the
+                                        preferred
+                                        choice for its clean, versatile appeal.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-2">
+                                        Weave Options:
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                        <li>• Percale</li>
+                                        <li>• Sateen</li>
+                                        <li>• Twill</li>
+                                        <li>• Jersey</li>
+                                        <li>• Dobby</li>
+                                        <li>• Patterned</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/hmt6.webp" class="w-full h-full  object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low" alt="Fitted Sheets" />
+                                </div>
+
+                            </div>
+
+                            <!-- 3. DUVET & QUILT COVERS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- IMAGE -->
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[450px]">
+                                    <img src="./public/images/hmt8.webp" class="w-full object-cover h-full"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Duvet & Quilt Covers" />
+                                </div>
+
+                                <!-- TEXT -->
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Duvet & Quilt Covers
+                                    </h3>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Extend the life of duvet inserts and reduce maintenance costs with duvet and
+                                        quilt covers
+                                        designed to protect against body oils, moisture, and spills — keeping duvets
+                                        cleaner for longer.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Available in <strong>T-144 to T-400</strong> thread counts, using
+                                        <strong>100% Cotton, Poly-Cotton (50:50 / 60:40 / 65:35), and CVC, MicroFibre
+                                            GSM 75 - GSM 200</strong>,
+                                        with weave options including Percale, Sateen, Twill, Dobby, and Patterned.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Offered in Twin to King sizes with zipper or corner-tie closures for a secure
+                                        fit.
+                                        Ideal for institutional use with easy-laundry shades like white and beige.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-2">
+                                        Additional Features:
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                        <li>• Zipper or tie closure options</li>
+                                        <li>• Water-resistant finishes</li>
+                                        <li>• Stain-release treatments</li>
+                                        <li>• Durable for high-use environments</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <!-- 4. PILLOW COVERS & PILLOW CASES -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Pillow Covers & Pillow Cases
+                                    </h3>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Keep your pillows fresher, cleaner, and longer-lasting with our premium pillow
+                                        protectors and covers. A high-quality pillow protector creates an effective
+                                        barrier against moisture, stains, body oils, and daily wear and tear — helping
+                                        you preserve the comfort and support of your favorite pillow for many years.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-2">
+                                        What we offer:
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                        <li>• <strong>Materials:</strong> 100% Cotton, Polyester, Satin, Flannel, CVC
+                                            and PC blends</li>
+                                        <li>• <strong>Design options:</strong> Printed, Dyed, or White — reversible or
+                                            simple styles</li>
+                                        <li>• <strong>Premium fabrics:</strong> Woven textures, Jacquards, and Dobby
+                                            designs in cotton and poly-cotton</li>
+                                        <li>• <strong>Specialized covers:</strong> Institutional and hospital-grade for
+                                            frequent laundering and high-use environments</li>
+                                        <li>• <strong>Custom throw pillow covers:</strong> Manufactured to your tech
+                                            pack — custom designs, sizes, and closures</li>
+                                        <li>• <strong>Flexible ordering:</strong> Supplied individually or as part of
+                                            complete bed sheet sets</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/hmt11.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Pillow Covers & Pillow Cases" />
+                                </div>
+
+                            </div>
+
+                            <!-- 5. CUSHION COVERS & CUSHION CASES -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[450px]">
+                                    <img src="./public/images/hmt7.webp" class="w-full object-cover h-full"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Cushion Covers & Cushion Cases" />
+                                </div>
+
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Cushion Covers & Cushion Cases
+                                    </h3>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Protect your cushions from germs, dirt, and buildup with our high-quality
+                                        cushion covers and protectors. Our covers create a reliable barrier that
+                                        prevents dead skin, dust, and bacteria from penetrating deep into the cushion
+                                        core — keeping your cushions cleaner, more hygienic, and longer-lasting.
+                                    </p>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-2">
+                                        Fully customized to your specifications:
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm mb-4">
+                                        <li>• <strong>Material composition</strong> – 100% Cotton, Polyester, Blended
+                                            Cotton/Poly (52:48 or 65:35), CVC, Microfiber, or other synthetics</li>
+                                        <li>• <strong>Filling and weight</strong> – Your choice based on desired
+                                            firmness and feel</li>
+                                        <li>• <strong>Printing methods</strong> – Digital print, reactive print, or
+                                            pigment print for vibrant, long-lasting designs</li>
+                                        <li>• <strong>Thread count</strong> – Ranging from T-128 to T-300</li>
+                                        <li>• <strong>Sizing</strong> – Any custom dimensions you need</li>
+                                    </ul>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-2">
+                                        Material benefits at a glance:
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                        <li>• <strong>Natural cotton and cotton-polyester blends</strong> – Easy to
+                                            wash, simple to clean, and hold their shape well over time</li>
+                                        <li>• <strong>Synthetic options like microfiber and polyester</strong> –
+                                            Affordable, durable, and available in a wide range of attractive finishes
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 6. CURTAINS & DRAPERIES -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Curtains & Draperies
+                                    </h3>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Stay ahead in interior design with our curtain sets, crafted to meet both
+                                        current and evolving market trends. Whether for residential, Institutional, or
+                                        commercial spaces, our curtains combine style, function, and quality.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-2">
+                                        Fabric options for every need:
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm mb-4">
+                                        <li>• <strong>Elegant luxury fabrics</strong> – Silk, Damask, Suede, and
+                                            Chenille for high-end, sophisticated interiors</li>
+                                        <li>• <strong>Practical high performance fabrics</strong> – PVC for moisture
+                                            resistance, easy cleaning, and durability in high-humidity areas</li>
+                                        <li>• <strong>Custom prints and solids</strong> – Dyed or printed fabrics made
+                                            from scratch based on your exact design requirements</li>
+                                    </ul>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Designed by window type, usage, and interior style — blackout, sheer, thermal,
+                                        or decorative — we tailor accordingly.
+                                    </p>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/hmt9.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Curtains & Draperies" />
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="hidden text-center" id="table">
+                    <div class="bg-[#f7f6f4] py-24 relative overflow-hidden" id="home-textiles">
+
+                        <!-- background effects -->
+                        <div class="absolute -top-32 left-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl">
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-0 w-[32rem] h-[32rem] bg-emerald-200/20 rounded-full blur-3xl">
+                        </div>
+
+                        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+                            <!-- HEADER -->
+                            <div class="text-center mb-20">
+                                <p class="tracking-[0.35em] text-sm text-gray-500 font-['Playfair_Display'] mb-4">
+                                    TABLE LINEN DIVISION
+                                </p>
+
+                                <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26]">
+                                    Refined <span class="tcolor">Table Linen</span> Solutions
+                                </h2>
+
+                                <p class="mt-6 max-w-3xl mx-auto text-[#6e6a5e] mons leading-relaxed">
+                                    From elegant dining arrangements to professional Institutional settings, LAJ
+                                    offers
+                                    table linen solutions
+                                    designed for presentation, durability, and everyday functionality. Our collection
+                                    includes tablecloths,
+                                    napkins, runners, and banquet linens crafted to enhance dining experiences in
+                                    commercial and residential spaces.
+                                </p>
+                            </div>
+                            <!-- 9. TABLE LINEN -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[450px]">
+                                    <img decoding="async" fetchpriority="low" src="./public/images/hmt12.webp"
+                                        class="w-full object-cover h-full" loading="lazy" alt="Table Linen" />
+                                </div>
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Table Cover & Table Cloths
+                                    </h3>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        We provide bulk table linen solutions for the global Institutional industry,
+                                        specializing in table cloths,
+                                        covers, runners, and related products for large-scale institutional
+                                        requirements. All items are produced
+                                        according to buyer specifications, including sizing, design, and finishing
+                                        details.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Our collection includes a wide range of materials such as cotton, polyester,
+                                        linen, silk, organza, and PVC,
+                                        allowing flexible options for different budgets and styling needs. Each product
+                                        is tailored to achieve the
+                                        required balance of durability and presentation.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        We also offer full customization for dimensions, hemming, packaging, and
+                                        labeling to meet specific client
+                                        and market requirements.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-2">
+                                        Popular options (Round, Square, Rectangular):
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                        <li>• 100% Cotton – Plain & Damask Print</li>
+                                        <li>• 100% Cotton – 200 Thread Count</li>
+                                        <li>• Cotton Satin Band & Damask Variants</li>
+                                        <li>• Poly/Cotton Blend (50:50, 180 TC)</li>
+                                        <li>• Spun Polyester (200–240 GSM, stain resistant)</li>
+                                        <li>• 100% Polyester Damask Table Linen</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 31. TABLE RUNNERS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Table Runners
+                                    </h3>
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        At LAJ, our table runners add elegance and functionality to any dining
+                                        setting — protecting table surfaces while enhancing décor. Ideal for hotels,
+                                        restaurants, banquet halls, wedding venues, and home dining.
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                        <li>• <strong>Materials</strong> – 100% Cotton, Linen, Polyester, Satin,
+                                            Organza, Jacquard, and Damask</li>
+                                        <li>• <strong>Designs</strong> – Solid colors, digital prints, reactive prints,
+                                            jacquard patterns, plain, printed, or embroidered</li>
+                                        <li>• <strong>Sizes</strong> – 12″×36″ to 18″×108″; custom dimensions available
+                                        </li>
+                                        <li>• <strong>Specifications</strong> – 180–300 TC (cotton); 200–240 GSM
+                                            (polyester); OEKO TEX® certified</li>
+                                        <li>• <strong>Finish options</strong> – Stain-resistant, wrinkle-free,
+                                            double-hemmed edges, mitered corners, fringed or tasseled ends</li>
+                                        <li>• <strong>Care</strong> – Machine washable warm, tumble dry low; maintains
+                                            shape and color through commercial laundering</li>
+                                        <li>• <strong>Custom options</strong> – Bulk orders, custom sizing, and private
+                                            labeling available</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/hmt24.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low" alt="Table Runners" />
+                                </div>
+
+                            </div>
+
+
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[450px]">
+                                    <img decoding="async" fetchpriority="low" src="./public/images/hmt25.webp"
+                                        class="w-full object-cover h-full" loading="lazy" alt="Napkins" />
+                                </div>
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Napkins
+                                    </h3>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        We provide high-quality napkin solutions for the global institutional and
+                                        hospitality industry,
+                                        including restaurants, hotels, and event setups. Our napkins are designed to
+                                        meet both functional
+                                        and aesthetic requirements for large-scale usage.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Our range includes a variety of fabrics such as cotton, polyester, linen, and
+                                        blended materials,
+                                        offering flexibility in texture, absorbency, and durability. Each napkin is
+                                        manufactured based on
+                                        buyer specifications, including size, fold style, and finish.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        We offer complete customization options including hemming styles, branding,
+                                        packaging, and labeling
+                                        to align with specific client and market needs.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-2">
+                                        Popular options:
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                        <li>• 100% Cotton Napkins – Plain & Damask</li>
+                                        <li>• 100% Cotton – 180–220 Thread Count</li>
+                                        <li>• Cotton Satin Band Variants</li>
+                                        <li>• Poly/Cotton Blend (50:50)</li>
+                                        <li>• Spun Polyester (Stain Resistant, Durable)</li>
+                                        <li>• 100% Polyester Napkins</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden text-center" id="thermalblankets">
+                    <div class="bg-[#f7f6f4] py-24 relative overflow-hidden" id="home-textiles">
+
+                        <!-- background effects -->
+                        <div class="absolute -top-32 left-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl">
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-0 w-[32rem] h-[32rem] bg-emerald-200/20 rounded-full blur-3xl">
+                        </div>
+
+                        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+                            <!-- HEADER -->
+                            <div class="text-center mb-20">
+                                <p class="tracking-[0.35em] text-sm text-gray-500 font-['Playfair_Display'] mb-4">
+                                    THERMAL BLANKET DIVISION
+                                </p>
+
+                                <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26]">
+                                    Premium <span class="tcolor">Thermal Blanket</span> Solutions
+                                </h2>
+
+                                <p class="mt-6 max-w-3xl mx-auto text-[#6e6a5e] mons leading-relaxed">
+                                    From lightweight thermal layers to heavy winter blankets, LAJ delivers premium
+                                    blanket solutions
+                                    engineered for warmth, comfort, and durability. Designed for residential,
+                                    Institutional, and export markets,
+                                    our blankets ensure superior insulation and long-lasting performance in cold
+                                    climates.
+                                </p>
+                            </div>
+
+                            <!-- 7. COTTON CELLULAR THERMAL BLANKETS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[450px]">
+                                    <img src="./public/images/hmt13.webp" class="w-full object-cover h-full"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Cotton Cellular Thermal Blankets" />
+                                </div>
+
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Cotton Cellular Thermal Blankets
+                                    </h3>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Year-round comfort with one intelligent blanket — our 100% Cotton Cellular
+                                        Thermal Blankets feature a lightweight, open-weave design that provides
+                                        breathable coziness on cooler summer nights and excellent thermal insulation
+                                        during cold winters.
+                                    </p>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Built to last through constant use — made from soft, dense cotton, these
+                                        blankets retain their original texture, color, and structural integrity even
+                                        after repeated industrial laundering. No fading, no pilling, no loss of quality.
+                                    </p>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Trusted in hospitals and healthcare facilities — clinicians choose our blankets
+                                        to keep patients warm and comfortable because they are gentle on sensitive skin,
+                                        easy to sanitize, and provide consistent thermal regulation.
+                                    </p>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Elegant enough for premium settings — beyond functionality, our blankets add a
+                                        stylish, luxurious finishing touch to hotel guest rooms, resorts, assisted
+                                        living centers, and high-end residential interiors.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 8. THERMAL FLEECE BLANKETS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Thermal Fleece Blankets
+                                    </h3>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Consistent warmth in any climate — as leading exporters of Thermal Fleece
+                                        Blankets, we source synthetic blankets using 100% virgin fibers such as
+                                        polyester and acrylic. These materials ensure durability, softness, and reliable
+                                        thermal performance.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Certified and standardized — our blankets are available in low, medium, and high
+                                        thermal ratings, each backed by international quality standards and certified
+                                        TOG testing.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-2">
+                                        Choose the right warmth level for your needs:
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                        <li>• <strong>Low Thermal Fleece Blanket (TOG 1.5)</strong> – Ideal for indoor
+                                            use in rooms with heating facilities, or for outdoor use in milder
+                                            conditions. Lightweight and breathable.</li>
+                                        <li>• <strong>Medium Thermal Fleece Blanket (TOG 2.5)</strong> – A versatile
+                                            all-season option, suitable for both warmer and cooler conditions. Balances
+                                            insulation with breathability for year-round comfort.</li>
+                                        <li>• <strong>High Thermal Fleece Blanket (TOG 4)</strong> – Designed
+                                            specifically for cold climates. Provides maximum warmth and heat retention —
+                                            best for freezing temperatures, unheated spaces, or winter travel.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img decoding="async" fetchpriority="low" src="./public/images/hmt14.webp"
+                                        class="w-full h-full object-cover" loading="lazy"
+                                        alt="Thermal Fleece Blankets" />
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden text-center" id="mattresscovers">
+                    <div class="bg-[#f7f6f4] py-24 relative overflow-hidden" id="home-textiles">
+
+                        <!-- background effects -->
+                        <div class="absolute -top-32 left-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl">
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-0 w-[32rem] h-[32rem] bg-emerald-200/20 rounded-full blur-3xl">
+                        </div>
+
+                        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+                            <!-- HEADER -->
+                            <div class="text-center mb-20">
+                                <p class="tracking-[0.35em] text-sm text-gray-500 font-['Playfair_Display'] mb-4">
+                                    MATTRESS COVER DIVISION
+                                </p>
+
+                                <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26]">
+                                    Premium <span class="tcolor">Mattress Cover</span> Solutions
+                                </h2>
+
+                                <p class="mt-6 max-w-3xl mx-auto text-[#6e6a5e] mons leading-relaxed">
+                                    From lightweight protective layers to fully padded mattress covers, LAJ delivers
+                                    premium
+                                    bedding solutions engineered for comfort, hygiene, and durability. Designed for
+                                    residential,
+                                    Institutional, and export markets, our mattress covers provide superior protection,
+                                    breathability, and long-lasting performance for everyday use.
+                                </p>
+                            </div>
+
+                            <!-- 22. MATTRESS COVERS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Mattress Covers & Protectors
+                                    </h3>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        As mattress protectors exporters, we provide an essential barrier against
+                                        spills, stains, dust mites, allergens, and daily wear — keeping mattresses
+                                        cleaner, fresher, and longer-lasting.
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm mb-4">
+                                        <li>• <strong>Materials</strong> – 100% Cotton, Cotton Terry with waterproof PU
+                                            backing, Bamboo Viscose, TENCEL™, Polyester, and Cotton-Poly blends</li>
+                                        <li>• <strong>Product types</strong> – Fitted (elasticized), Zippered
+                                            encasements (360° protection), Elastic strap, Flat, and Quilted (120–150 GSM
+                                            polyfill)</li>
+                                        <li>• <strong>Thread counts</strong> – T-144 to T-200 (higher on request)</li>
+                                        <li>• <strong>Weave options</strong> – Percale, Sateen, Twill, Jersey, Dobby,
+                                            and Quilted</li>
+                                        <li>• <strong>Sizing</strong> – Twin to Cal King, depths 9–14" standard to deep
+                                            pocket, plus custom institutional dimensions</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/hmt18.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Mattress Covers & Protectors" />
+                                </div>
+
+                            </div>
+
+                            <!-- 23. MATTRESS ENCASEMENTS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[450px]">
+                                    <img src="./public/images/hmt16.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Mattress Encasements" />
+                                </div>
+
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Mattress Encasements
+                                    </h3>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Our laminated mattress encasements block bed bugs, allergens, dust mites,
+                                        moisture, incontinence, sweat, pet dander, and odors — with antimicrobial and
+                                        fire-retardant options available.
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                        <li>• <strong>Polyester encasement</strong> – Bug lock 3-sided zipper, PU
+                                            lining, fits queen 9–16", machine wash hot</li>
+                                        <li>• <strong>Certified encasement</strong> – Non-allergenic, breathable, fire
+                                            retardant, zipper hook, fits full 54"×75", 3-year warranty</li>
+                                        <li>• <strong>Poly/cotton protector</strong> – Anti-pet dander, anti-odor, twin
+                                            39"×75"</li>
+                                        <li>• <strong>Terry cover</strong> – GSM 100–200, cotton toweling top, PU
+                                            backing, poly jersey skirt, queen 60"×80"×9.45"</li>
+                                        <li>• <strong>Knit fabric set</strong> – Mattress + 2 pillow + box spring cover;
+                                            polyester knit + PU film, fits full depth 12", quiet silky surface</li>
+                                        <li>• <strong>Microfiber waterproof</strong> – Zippered encapsulation, urethane
+                                            membrane, woven micro polyester top/bottom, full size</li>
+                                        <li>• <strong>Non-woven</strong> – Polypropylene cover, stretch polyester sides,
+                                            inner polyethylene, fits twin up to 16"</li>
+                                        <li>• <strong>Care</strong> – All machine wash warm (no bleach/iron, low dry)
+                                            except where noted</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 24. MATTRESS TOPPERS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Mattress Toppers
+                                    </h3>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+
+                                        At LAJ, our mattress toppers add a plush, cushioning layer to enhance
+                                        mattress softness and comfort. Available in 2-inch, 3-inch, and 4-inch
+                                        thicknesses with soft, medium, or firm density options, they are crafted from
+                                        premium memory foam, cooling gel-infused foam, natural latex, or hypoallergenic
+                                        fiberfill. Each topper features a breathable, OEKO TEX® certified cotton or
+                                        bamboo cover with an anti-slip bottom grip to keep it securely in place.
+                                        Precision-crafted for durability.
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                        <li>• <strong>Thickness & density</strong> – Available in 2–4 inches; soft,
+                                            medium, and firm options to customize your sleep surface</li>
+                                        <li>• <strong>Fill options</strong> – Memory foam, gel-infused cooling foam,
+                                            latex, and fiberfill</li>
+                                        <li>• <strong>Cover features</strong> – Breathable, hypoallergenic with
+                                            OEKO TEX® certification and anti-slip bottom grip</li>
+                                        <li>• <strong>Pressure relief</strong> – Relieves pressure points and reduces
+                                            motion transfer for undisturbed sleep</li>
+                                        <li>• <strong>Easy maintenance</strong> – Machine washable for effortless care
+                                            and long-term hygiene</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/hmt15.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low" alt="Mattress Toppers" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden text-center" id="comfortsets">
+                    <div class="bg-[#f7f6f4] py-24 relative overflow-hidden" id="home-textiles">
+
+                        <!-- background effects -->
+                        <div class="absolute -top-32 left-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl">
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-0 w-[32rem] h-[32rem] bg-emerald-200/20 rounded-full blur-3xl">
+                        </div>
+
+                        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+                            <!-- HEADER -->
+                            <div class="text-center mb-20">
+                                <p class="tracking-[0.35em] text-sm text-gray-500 font-['Playfair_Display'] mb-4">
+                                    Comforter Sets DIVISION
+                                </p>
+
+                                <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26]">
+                                    Premium <span class="tcolor">Comforter Sets</span> Solutions
+                                </h2>
+
+                                <p class="mt-6 max-w-3xl mx-auto text-[#6e6a5e] mons leading-relaxed">
+                                    From lightweight everyday sets to luxurious layered designs, LAJ delivers premium
+                                    Comforter Sets
+                                    crafted for style, warmth, and durability. Designed for residential, Institutional,
+                                    and export markets,
+                                    our Comforter Sets enhance bedroom aesthetics while providing exceptional coziness
+                                    and
+                                    long-lasting quality.
+                                </p>
+                            </div>
+
+
+                            <!-- 25. GOOSEDOWN COMFORTER SETS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[450px]">
+                                    <img src="./public/images/hmt20.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Goosedown Comforter Sets" />
+                                </div>
+
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Goosedown Comforter Sets
+                                    </h3>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        At LAJ, our goosedown comforter sets deliver exceptional warmth without
+                                        weight, combining luxurious loft with breathable comfort. Ideal for hotels,
+                                        resorts, and luxury bedding retailers seeking premium, long-lasting down
+                                        products.
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                        <li>• <strong>Fill power</strong> – 550 to 850; ethically sourced white
+                                            goosedown with minimum 90% down cluster ratio</li>
+                                        <li>• <strong>Certifications</strong> – RDS and OEKO TEX® certified;
+                                            hypoallergenic and allergen-barrier treatments available</li>
+                                        <li>• <strong>Shell fabric</strong> – 100% Cotton cambric or sateen, 233–400
+                                            thread count; baffle-box or sewn-through construction</li>
+                                        <li>• <strong>Sizes</strong> – Twin, Full, Queen, King, and Cal King; all-season
+                                            or winter-weight warmth options</li>
+                                        <li>• <strong>Set includes</strong> – One comforter plus two matching pillow
+                                            shams</li>
+                                        <li>• <strong>Care</strong> – Machine washable, quick-drying, retains loft after
+                                            repeated laundering</li>
+                                        <li>• <strong>Custom options</strong> – Fill power, sizing, and packaging per
+                                            your requirements</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 26. DOWN ALTERNATIVE COMFORTER SETS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Down Alternative Comforter Sets
+                                    </h3>
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        At LAJ, our down alternative comforter sets offer the same plush warmth and
+                                        loft as natural down — hypoallergenic, cruelty-free, and budget-friendly. Ideal
+                                        for hotels, hospitals, schools, and allergy-sensitive households worldwide.
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                        <li>• <strong>Fill</strong> – Premium siliconized microfiber or hollow polyester
+                                            fibers, 200–400 GSM</li>
+                                        <li>• <strong>Shell</strong> – 100% Cotton or poly-cotton blends, 180–300 TC,
+                                            percale or sateen weave</li>
+                                        <li>• <strong>Construction</strong> – Box or baffle-box with double-needle
+                                            stitching for even fill distribution</li>
+                                        <li>• <strong>Sizes</strong> – Twin to Cal King; all-season and winter-weight
+                                            options</li>
+                                        <li>• <strong>Certification</strong> – OEKO TEX® Standard 100; hypoallergenic
+                                            and dust-mite resistant</li>
+                                        <li>• <strong>Set includes</strong> – One comforter plus two matching pillow
+                                            shams</li>
+                                        <li>• <strong>Custom options</strong> – Fill weights, shell fabrics, and bulk
+                                            packaging per requirements</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/hmt23.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Down Alternative Comforter Sets" />
+                                </div>
+
+                            </div>
+
+                            <!-- 27. COTTON SHELL + DOWN FILL COMFORTER -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[450px]">
+                                    <img src="./public/images/hmt21.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Cotton Shell Down Fill Comforter" />
+                                </div>
+
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Cotton Shell + Down Fill Comforter
+                                    </h3>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        At LAJ, our cotton-shell down comforters feature breathable 100% cotton
+                                        covers in percale (crisp/cool), sateen (silky/lustrous), or cambric
+                                        (down-proof). Ideal for hotels, luxury resorts, and high-end bedding retailers
+                                        worldwide.
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                        <li>• <strong>Fill power</strong> – 550–800+; duck down (80/20) or premium goose
+                                            down (90/10)</li>
+                                        <li>• <strong>Construction</strong> – Baffle-box or sewn-through; double-needle
+                                            stitching with piped edges to prevent fill leakage</li>
+                                        <li>• <strong>Thread count</strong> – 230–500 TC; sizes Twin to Cal King,
+                                            all-season or winter-weight</li>
+                                        <li>• <strong>Certifications</strong> – OEKO TEX® & RDS certified;
+                                            hypoallergenic treatment available</li>
+                                        <li>• <strong>Colors</strong> – White, ivory, and custom dye colors upon request
+                                        </li>
+                                        <li>• <strong>Care</strong> – Machine washable gentle cycle, tumble dry low;
+                                            retains loft up to 50+ washes</li>
+                                        <li>• <strong>Custom options</strong> – Bulk orders and private labeling
+                                            available</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 28. POLYESTER SHELL + DOWN FILL COMFORTER -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Polyester Shell + Down Fill Comforter
+                                    </h3>
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        At LAJ, our polyester-shell down comforters feature durable, lightweight 100%
+                                        polyester microfiber shells in plain or jacquard weave. Ideal for hotels,
+                                        hospitals, hostels, and institutional bedding programs.
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                        <li>• <strong>Fill power</strong> – 550–750; duck down (80/20) or goose down
+                                            (90/10)</li>
+                                        <li>• <strong>Shell</strong> – 50–80 GSM, down-proof and noiseless; baffle-box
+                                            or sewn-through construction</li>
+                                        <li>• <strong>Sizes</strong> – Twin to Cal King; all-season or winter-weight
+                                            options</li>
+                                        <li>• <strong>Certifications</strong> – OEKO TEX® & RDS certified;
+                                            hypoallergenic treatment available</li>
+                                        <li>• <strong>Colors</strong> – White, ivory, silver, and custom Pantone colors
+                                        </li>
+                                        <li>• <strong>Care</strong> – Machine washable warm, tumble dry low; retains
+                                            shape through industrial laundering</li>
+                                        <li>• <strong>Custom options</strong> – Bulk orders and private labeling
+                                            available</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/hmt19.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Polyester Shell Down Fill Comforter" />
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Beautiful FAQ Section -->
+    <section class="relative py-10 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff] overflow-hidden">
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <p class="tracking-[0.3em] text-sm text-gray-500 mons mb-4">
+                    CONTACT & SUPPORT
+                </p>
+
+                <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight">
+                    Frequently Asked Questions <br>
+                    <span class="play tcolor text-4xl md:text-5xl">Contact & Inquiry Support</span>
+                </h2>
+            </div>
+
+            <!-- Accordion -->
+            <div class="space-y-5">
+
+                <!-- Item 1 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        How can I contact LAJ Group for product inquiries?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            You can contact us through the inquiry form on this page or email our export team directly.
+                            We typically respond within 24–48 business hours with detailed product and pricing
+                            information.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What information should I include in my inquiry?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Please include product type, quantity, specifications (GSM, material, size), packaging
+                            requirements, and destination country. This helps us provide accurate pricing and production
+                            feasibility.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Do you handle bulk and custom orders?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Yes, we specialize in bulk manufacturing, private label production, and custom textile
+                            development based on buyer specifications and brand requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What is your typical response time?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Our export team usually responds within 24–48 hours on business days, depending on the
+                            complexity of the inquiry and product requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Can I request samples before placing an order?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Yes, sample development is available for most product categories. Sampling timelines depend
+                            on product complexity and specification requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Do you ship internationally?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Yes, we serve global markets including Asia, Africa, the Middle East, and Latin America with
+                            FOB, CIF, and CNF shipping options.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        How do I get pricing for my product requirement?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Pricing is based on product type, quantity, material specifications, and destination. Submit
+                            your inquiry form with details and our team will provide a tailored quotation.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="relative font-[Playfair_Display] overflow-hidden border-t border-white/10 text-white bg-[#0b0b0c]">
+
+        <!-- Dark base -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0b0b0c] via-[#0f0f10] to-[#0b0b0c]"></div>
+
+        <!-- subtle texture -->
+        <div
+            class="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat">
+        </div>
+
+        <!-- Top Strip (compact) -->
+        <div class="relative border-b border-white/10 py-3 px-6 backdrop-blur-xl bg-white/5">
+            <div
+                class="container 2xl:max-w-[1530px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+
+                <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">
+                    Faisalabad, Pakistan
+                </p>
+
+                <div class="flex items-center gap-4">
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">ISO Certified</span>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Est. 2010</span>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">18+ Countries</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main Footer (reduced spacing) -->
+        <div class="relative container 2xl:max-w-[1530px] mx-auto px-4 py-10">
+
+            <div class="grid lg:grid-cols-12 gap-10">
+
+                <!-- Brand -->
+                <div class="lg:col-span-4 flex flex-col gap-4">
+
+                    <a href="./index.html">
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            style="  filter: invert(1);" alt="LAJ Logo"
+                            class="w-24 object-contain opacity-90 brightness-200">
+                    </a>
+
+                    <p class="text-sm text-gray-400 man leading-relaxed max-w-xs">
+                        Connecting international buyers with trusted textile manufacturers across Pakistan.
+                    </p>
+
+                    <!-- Social -->
+                    <div class="flex items-center gap-3">
+
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition">
+                            <i class="fa-brands fa-facebook-f text-[11px]"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition">
+                            <i class="fa-brands fa-instagram text-[11px]"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition">
+                            <i class="fa-brands fa-linkedin-in text-[11px]"></i>
+                        </a>
+
+
+
+                    </div>
+
+                </div>
+
+                <!-- Nav -->
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-500 mb-4">Navigate</p>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="./index.html" class="text-sm text-gray-400 hover:text-white transition">Home</a>
+                        </li>
+                        <li><a href="./about.html" class="text-sm text-gray-400 hover:text-white transition">About</a>
+                        </li>
+                        <li><a href="./services.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="./sustainability.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Sustainability</a></li>
+                        <li><a href="./contact.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-500 mb-4">Products</p>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="./hometextiles.html" class="text-sm text-gray-400 hover:text-white transition">Home
+                                Textiles</a></li>
+                        <li><a href="./hospital.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Institutional
+                                Textiles</a></li>
+                        <li><a href="./healthcare.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Healthcare
+                                Textiles</a></li>
+                        <li><a href="./terrytowels.html" class="text-sm text-gray-400 hover:text-white transition">Bath
+                                Linen</a>
+                        </li>
+                        <li><a href="./apparels.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Apparels</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-500 mb-4">Get In Touch</p>
+
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a href="tel:+923016097666" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Phone</span>
+                                <span class="text-xs text-gray-300 hover:text-white transition">+92 301 6097666</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:info@lajhometextile.com" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Email</span>
+                                <span
+                                    class="text-xs text-gray-300 hover:text-white transition">info@lajhometextile.com</span>
+                            </a>
+                        </li>
+
+                        <li class="flex flex-col">
+                            <span class="text-[10px] text-gray-500">Location</span>
+                            <span class="text-xs text-gray-300">Faisalabad, Pakistan</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar (compact) -->
+            <div
+                class="mt-10 border-t border-white/10 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+
+                <p class="text-[11px] text-gray-500">© 2026 LAJ. All rights reserved.</p>
+
+                <div class="flex items-center gap-4">
+                    <a href="./terms.html" class="text-[11px] text-gray-500 hover:text-white transition">Terms</a>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <a href="./privacy.html" class="text-[11px] text-gray-500 hover:text-white transition">Privacy</a>
+                </div>
+
+                <p class="text-[11px] text-gray-500">
+                    Developed by
+                    <a href="https://wa.me/923224066958" target="_blank"
+                        class="text-gray-300 hover:text-white transition">
+                        MAC
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script defer src="./src/js/index.js"></script>
+    <script defer src="./src/js/gsap.js"></script>
+
+
+
+</body>
+
+
+</html>
