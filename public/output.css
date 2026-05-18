@@ -1272,6 +1272,9 @@ input[type="range"]::-ms-fill-lower {
 .gap-14 {
   gap: 3.5rem;
 }
+.gap-8 {
+  gap: 2rem;
+}
 .space-y-7 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1446,6 +1449,10 @@ input[type="range"]::-ms-fill-lower {
 .border-orange-100 {
   --tw-border-opacity: 1;
   border-color: rgb(254 236 220 / var(--tw-border-opacity));
+}
+.border-\[red\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 0 0 / var(--tw-border-opacity));
 }
 .border-t-black {
   --tw-border-opacity: 1;
