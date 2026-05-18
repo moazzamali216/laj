@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAJ - HealthCare</title>
+    <link rel="Icon" href="./public/images/app-logo.png" type="image/x-icon">
+
+    <!-- External CSsS -->
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./src/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+    <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy" src="./public/images/logo.png"
+        class="w-28 animate-up-pulse" alt="Logo">
+    <p class="mt-7 text-sm tracking-widest text-gray-500 animate-up-pulse">
+    <div class="w-8 h-8 border-4 border-gray-200 border-t-black rounded-full animate-spin"></div>
+    </p>
+</div>
+
+<body class=" bg-gray-50">
+    <!-- Desktop Navbar -->
+    <!-- Minimal Luxury Navbar -->
+    <nav class="hidden lg:block  fixed top-5 left-0 w-full z-50">
+
+        <!-- Side Gaps -->
+        <div class="max-w-7xl mx-auto px-5">
+
+            <!-- Navbar Container -->
+            <div class="bg-[#f8f7f5]/90  shadow-md backdrop-blur-md border border-neutral-200 rounded-[26px] ">
+
+                <!-- Top Area -->
+                <div class="flex items-center justify-between px-8 py-2.5  border-neutral-200">
+
+                    <!-- Logo -->
+                    <a href="./index.html" class="flex items-center">
+
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            alt="Logo" class="w-28 object-contain">
+
+                    </a>
+
+
+                    <!-- Nav Links -->
+                    <ul class="flex items-center gap-12 text-[12px] tracking-[0.175em] uppercase text-gray-500">
+
+                        <!-- Active -->
+                        <li class="relative">
+
+                            <a href="./index.html" class="hover:text-neutral-900 transition duration-300">
+                                Home
+                            </a>
+
+
+
+                        </li>
+
+                        <li>
+                            <a href="./about.html " class="hover:text-neutral-900 transition duration-300">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./services.html" class="hover:text-neutral-900 transition duration-300">
+                                Services
+                            </a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="relative">
+
+                            <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+                                data-dropdown-placement="bottom-start"
+                                class="flex text-[12px] tracking-[0.175em] uppercase text-gray-500  items-center gap-1 hover:text-neutral-900 transition duration-300">
+
+                                Products
+
+                                <svg class="w-3.5 h-3.5 mt-[1px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <!-- Dropdown Container -->
+                            <div id="dropdownProducts"
+                                class="hidden absolute top-12 left-0 w-60 bg-white border border-neutral-200 rounded-2xl shadow-lg overflow-hidden">
+                                <ul class=" text-[11px] tracking-[0.175em] uppercase text-gray-500  ">
+                                    <li> <a href="./hometextiles.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Home
+                                            Textiles </a>
+                                    </li>
+                                    <li> <a href="./hospital.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Institutional
+                                            Textiles </a> </li>
+                                    <li> <a href="./healthcare.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Healthcare
+                                            Textiles
+                                        </a> </li>
+                                    <li> <a href="./terrytowels.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Bath Linen
+                                        </a>
+                                    </li>
+                                    <li> <a href="./apparels.html"
+                                            class="block px-5 py-3 border-b hover:bg-neutral-50 hover:text-neutral-900 transition">
+                                            Apparels
+                                        </a> </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li class="relative">
+                            <a href="./sustainability.html" class="hover:text-neutral-900 transition duration-300">
+                                Sustainability
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./public/pdfs/Laj.pdf" download
+                                class="hover:text-neutral-900 transition duration-300">
+                                E-Brochure
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Contact -->
+                    <a href="./contact.html"
+                        class="flex items-center gap-4 text-neutral-900 hover:opacity-70 transition duration-300">
+
+                        <span class="w-10 h-px bg-neutral-900"></span>
+
+                        <span class="text-[14px] uppercase tracking-wide font-medium man">
+                            Contact Us
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ========================= -->
+    <!-- Mobile Luxury Navbar -->
+    <!-- ========================= -->
+
+    <!-- Top Navbar -->
+    <nav class="lg:hidden fixed top-5 left-0 w-full z-[999]">
+
+        <div class="px-4">
+
+            <div
+                class="bg-[#f8f7f5]/90 backdrop-blur-md border border-neutral-200 rounded-2xl px-5 py-4 flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="./index.html">
+
+                    <img loading="lazy" decoding="async" fetchpriority="low" loading="lazy"
+                        src="./public/images/logo.png" class="w-24 object-contain" alt="Logo">
+
+                </a>
+
+                <!-- Menu Button -->
+                <button id="openMenu"
+                    class="w-11 h-11 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                            d="M4 6h16M4 12h16M4 18h16" />
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay"
+        class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-[998] opacity-0 transition duration-300">
+    </div>
+
+    <!-- Side Menu -->
+    <div id="sideMenu"
+        class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#f8f7f5] z-[999] translate-x-full transition-transform duration-500 ease-in-out border-l border-neutral-200 flex flex-col">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between px-6 py-6 border-b border-neutral-200">
+
+            <!-- Logo -->
+            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                class="w-24 object-contain" alt="Logo">
+
+            <!-- Close -->
+            <button id="closeMenu"
+                class="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700">
+
+                ✕
+
+            </button>
+
+        </div>
+
+        <!-- Menu Links -->
+        <div class="flex-1 overflow-y-auto px-6 py-8">
+
+            <ul class="space-y-7 text-[15px] tracking-wide font-medium text-neutral-700 man">
+
+                <li>
+                    <a href="./index.html" class="flex items-center justify-between hover:text-neutral-900 transition">
+
+                        Home
+
+                        <span class="w-8 h-px bg-neutral-900"></span>
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./about.html" class="hover:text-neutral-900 transition block">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./services.html" class="hover:text-neutral-900 transition block">
+                        Services
+                    </a>
+                </li>
+
+                <!-- Products -->
+                <li>
+
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden bg-white">
+
+                        <!-- Products Heading -->
+                        <button id="productToggle"
+                            class="w-full flex items-center justify-between px-5 py-4 text-left text-neutral-800">
+
+                            <span>Products</span>
+
+                            <svg id="productArrow" xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 transition duration-300" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                                    d="M19 9l-7 7-7-7" />
+
+                            </svg>
+
+                        </button>
+
+                        <!-- Dropdown -->
+                        <div id="productMenu" class="hidden border-t border-neutral-200 px-5 py-4">
+
+                            <ul class="space-y-4 text-[14px] text-neutral-600">
+
+                                <li>
+                                    <a href="./hometextiles.html" class="block hover:text-neutral-900 transition">
+                                        Home Textiles
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./hospital.html" class="block hover:text-neutral-900 transition">
+                                        Institutional Textiles
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./healthcare.html" class="block hover:text-neutral-900 transition">
+                                        Healthcare Textiles
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./terrytowels.html" class="block hover:text-neutral-900 transition">
+                                        Bath Linen
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./apparels.html" class="block hover:text-neutral-900 transition">
+                                        Apparels
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="./sustainability.html" class="hover:text-neutral-900 transition block">
+                        Sustainability
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./public/pdfs/Laj.pdf" download class="hover:text-neutral-900 transition block">
+                        E-Brochure
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Bottom Button -->
+        <div class="p-6 border-t border-neutral-200">
+
+            <a href="./contact.html"
+                class="flex items-center justify-center gap-3 border border-neutral-300 rounded-full py-4 text-[14px] tracking-wide text-neutral-900 hover:bg-neutral-900 hover:text-white transition duration-300 man">
+
+                <span class="w-8 h-px bg-current"></span>
+
+                Contact Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <section class="relative h-[500px]  flex items-center justify-center overflow-hidden">
+
+        <!-- Background Image -->
+        <img loading='lazy' decoding="async" fetchpriority="low" src="./public/images/sus2.webp"
+            class="absolute inset-0 w-full h-full object-cover" alt="About LAJ">
+
+        <!-- Black Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/20"></div>
+
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4">
+
+            <h1 class="text-5xl md:text-5xl translate-y-[50px] font-['Playfair_Display'] text-white">
+                HealthCare Textiles
+            </h1>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- LUXURY INSTITUTIONAL TEXTILES HERO -->
+    <!-- WITHOUT BACKGROUND IMAGE -->
+    <!-- ========================================= -->
+
+    <section class="relative py-16 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff]">
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4">
+
+            <div class="grid lg:grid-cols-2  gap-12 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="">
+
+                    <p class="text-sm tracking-[0.3em] uppercase text-gray-500 mons mb-5">
+                        Medical Textile Manufacturing
+                    </p>
+
+                    <h1 class="text-5xl play text-[#2d2a26] leading-tight">
+                        Textile Systems Built for <br class="lg:block hidden">
+                        Clinical Reliability
+                    </h1>
+
+                    <p class="mt-8 text-gray-500 text-base leading-relaxed mons max-w-xl">
+                        We develop and supply healthcare-grade textile systems for hospitals, diagnostic centers,
+                        and institutional distributors where hygiene, consistency, and operational durability are
+                        critical.
+                    </p>
+
+                    <p class="mt-4 text-gray-500 text-base leading-relaxed mons max-w-xl">
+                        Every fabric is engineered for controlled environments — optimized for repeated industrial
+                        laundering,
+                        infection-risk reduction, and long-term clinical performance stability.
+                    </p>
+
+                    <!-- CTA -->
+                    <div class="mt-8 flex gap-4 flex-wrap">
+                        <a href="./contact.html"
+                            class="px-7 py-3 rounded-full bg-[#2d2a26] text-white text-sm man hover:opacity-90 transition">
+                            Request Technical Catalog →
+                        </a>
+
+                        <a href="./about.html"
+                            class="px-7 py-3 rounded-full border border-[#2d2a26]/20 text-[#2d2a26] text-sm man hover:bg-white transition">
+                            Explore About LAJ
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT GRID -->
+                <div class="grid md:grid-cols-2 gap-2.5">
+
+                    <!-- DOCTOR WEAR -->
+                    <div class="bg-white/70 border border-neutral-200 rounded-2xl p-6 flex items-start gap-4">
+                        <i class="fa-solid fa-user-doctor text-xl text-blue-500"></i>
+                        <div>
+                            <h3 class="text-[#2d2a26] play text-base">Doctor Wear</h3>
+                            <p class="text-sm text-gray-500 mons">
+                                55/45 poly-cotton · Twill weave · 160–180 GSM · Antimicrobial + fluid-repellent finish
+                            </p>
+                            <p class="text-xs text-gray-400 mt-1">
+                                Designed for surgical wards, diagnostics, and clinical staff uniforms under frequent
+                                wash cycles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SCRUBS -->
+                    <div class="bg-white/70 border border-neutral-200 rounded-2xl p-6 flex items-start gap-4">
+                        <i class="fa-solid fa-user-nurse text-xl text-green-500"></i>
+                        <div>
+                            <h3 class="text-[#2d2a26] play text-base">Medical Scrubs</h3>
+                            <p class="text-sm text-gray-500 mons">
+                                78/22 poly-cotton ripstop · 150–170 GSM · Moisture-wicking · Anti-stain finish
+                            </p>
+                            <p class="text-xs text-gray-400 mt-1">
+                                Engineered for mobility, breathability, and long shifts in high-intensity hospital
+                                environments.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PATIENT GOWNS -->
+                    <div class="bg-white/70 border border-neutral-200 rounded-2xl p-6 flex items-start gap-4">
+                        <i class="fa-solid fa-bed-pulse text-xl text-amber-500"></i>
+                        <div>
+                            <h3 class="text-[#2d2a26] play text-base">Patient Gowns</h3>
+                            <p class="text-sm text-gray-500 mons">
+                                65/35 poly-cotton · Plain weave · 140–160 GSM · Bleach-safe hygienic finish
+                            </p>
+                            <p class="text-xs text-gray-400 mt-1">
+                                Optimized for patient comfort, sanitation control, and hospital ward compliance
+                                standards.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SURGICAL TEXTILES -->
+                    <div class="bg-white/70 border border-neutral-200 rounded-2xl p-6 flex items-start gap-4">
+                        <i class="fa-solid fa-kit-medical text-xl text-indigo-500"></i>
+                        <div>
+                            <h3 class="text-[#2d2a26] play text-base">Surgical Textiles</h3>
+                            <p class="text-sm text-gray-500 mons">
+                                SMS polypropylene · 3-layer nonwoven · Barrier protection (fluid & microbial resistance)
+                            </p>
+                            <p class="text-xs text-gray-400 mt-1">
+                                Used in OT environments for sterile field creation and infection-control systems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- TOWELS -->
+                    <div
+                        class="md:col-span-2 bg-white/70 border border-neutral-200 rounded-2xl p-6 flex items-start gap-4">
+                        <i class="fa-solid fa-hand-holding-medical text-xl text-slate-500"></i>
+                        <div>
+                            <h3 class="text-[#2d2a26] play text-base">Medical Towels</h3>
+                            <p class="text-sm text-gray-500 mons">
+                                100% combed cotton · Honeycomb weave · 220–260 GSM · Lint-free surgical grade
+                            </p>
+                            <p class="text-xs text-gray-400 mt-1">
+                                Used in sterilization zones, surgical cleaning, and medical instrument handling.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="relative py-16 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff] overflow-hidden">
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4">
+
+            <div class="grid lg:grid-cols-12 gap-14 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="lg:col-span-6">
+
+                    <p class="text-sm tracking-[0.3em] uppercase text-gray-500 mons mb-4">
+                        Medical Textile Solution
+                    </p>
+
+                    <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight">
+                        Doctor & Surgical Wear <br>
+                        Precision Engineered for Healthcare Professionals
+
+                    </h2>
+
+                    <p class="mt-6 text-gray-500 text-sm leading-relaxed mons">
+                        Our doctor and surgical wear is developed for environments where hygiene, safety, and
+                        performance are non-negotiable.
+                        Through advanced fabric engineering, we deliver garments that ensure durability, all-day
+                        comfort, and compliance with international medical standards.
+                    </p>
+
+                    <p class="mt-4 text-gray-500 text-sm leading-relaxed mons">
+                        Every garment is constructed using hospital-grade textile systems optimized for infection
+                        prevention,
+                        extended wear comfort, and repeated industrial laundering cycles.
+                    </p>
+
+                    <!-- SPEC LIST -->
+                    <div class="mt-8 space-y-4 text-sm text-gray-600 man leading-relaxed">
+
+                        <p>
+                            • <span class="text-[#2d2a26] font-medium">Fabric composition:</span>
+                            55% recycled polyester / 45% combed cotton (poplin weave) – balanced strength and
+                            breathability
+                        </p>
+
+                        <p>
+                            • <span class="text-[#2d2a26] font-medium">Fabric weight:</span>
+                            165 GSM – engineered for repeated industrial wash cycles
+                        </p>
+
+                        <p>
+                            • <span class="text-[#2d2a26] font-medium">Performance finish:</span>
+                            Anti-microbial + fluid-repellent coating meeting hospital hygiene standards
+                        </p>
+
+                        <p>
+                            • <span class="text-[#2d2a26] font-medium">Construction:</span>
+                            Poly-cotton core thread seams designed for skin-safe long-shift wear
+                        </p>
+
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="mt-10">
+                        <a href="./contact.html"
+                            class="inline-flex items-center gap-3 px-7 py-3 rounded-full bg-[#2d2a26] text-white text-sm man hover:opacity-90 transition">
+                            Request Surgical Wear Inquiry →
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="lg:col-span-6">
+
+                    <div class="rounded-3xl overflow-hidden border border-neutral-200 shadow-lg">
+                        <img src="./public/images/medical-surgical.jpg" class="w-full h-[520px] object-cover"
+                            alt="Medical Surgical Wear" loading="lazy" decoding="async" fetchpriority="low">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="relative py-16 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff] overflow-hidden">
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4">
+
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+
+                <!-- LEFT: IDENTITY -->
+                <div class="lg:col-span-4">
+
+                    <p class="text-sm tracking-[0.3em] uppercase text-[#2d2a26]/60 mons mb-4">
+                        Patient Gowns
+                    </p>
+
+                    <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight">
+                        Engineered for Comfort & Clinical Efficiency
+                    </h2>
+
+                    <p class="mt-6 text-sm text-[#2d2a26]/70 leading-relaxed mons">
+                        Designed for hospitals and care facilities, patient gowns are developed to balance dignity,
+                        hygiene, and operational efficiency within controlled medical environments.
+                    </p>
+
+                    <p class="mt-4 text-sm text-[#2d2a26]/70 leading-relaxed mons">
+                        Built using hospital-grade textile engineering, ensuring usability in high-frequency clinical
+                        workflows.
+                    </p>
+
+                </div>
+
+                <!-- MIDDLE: SPEC CORE -->
+                <div class="lg:col-span-4 space-y-6">
+
+                    <div class="bg-white/70 border border-neutral-200 rounded-2xl p-6">
+                        <p class="text-[#2d2a26] mons font-medium mb-1">Fabric Standard</p>
+                        <p class="text-sm text-[#2d2a26]/70">
+                            65% Polyester / 35% Combed Cotton (120 GSM)
+                        </p>
+                    </div>
+
+                    <div class="bg-white/70 border border-neutral-200 rounded-2xl p-6">
+                        <p class="text-[#2d2a26] mons font-medium mb-1">Usage Environment</p>
+                        <p class="text-sm text-[#2d2a26]/70">
+                            Hospitals • Clinics • Recovery Units
+                        </p>
+                    </div>
+
+                    <div class="bg-white/70 border border-neutral-200 rounded-2xl p-6">
+                        <p class="text-[#2d2a26] mons font-medium mb-1">Performance</p>
+                        <p class="text-sm text-[#2d2a26]/70">
+                            Bleach safe • Color stable • Designed for repeated industrial laundering cycles
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: IMAGE -->
+                <div class="lg:col-span-4">
+
+                    <div class="rounded-3xl overflow-hidden border border-neutral-200 shadow-lg">
+                        <img src="./public/images/co1.webp" class="w-full h-[520px] object-cover" alt="Patient Gowns"
+                            loading="lazy" decoding="async" fetchpriority="low">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTER DETAILS -->
+            <div class="mt-14">
+
+                <p class="text-sm text-[#2d2a26]/70 leading-relaxed mons max-w-4xl">
+                    Patient gowns are engineered for clinical efficiency, ensuring easy access for medical staff while
+                    maintaining patient dignity and comfort during extended hospital stays.
+                </p>
+
+                <div class="mt-6 space-y-2 text-sm text-[#2d2a26]/80 man">
+
+                    <p>• 65/35 poly-cotton blend optimized for durability and comfort</p>
+                    <p>• Lightweight 120 GSM plain weave construction</p>
+                    <p>• Anti-microbial + enzymatic bleach-safe finishing system</p>
+                    <p>• Ergonomic open-back design with reinforced cotton tie tapes</p>
+                    <p>• Certified for continuous healthcare deployment under infection control standards</p>
+
+                </div>
+
+                <div class="mt-10">
+                    <a href="./contact.html"
+                        class="inline-flex items-center gap-3 px-7 py-3 rounded-full bg-[#2d2a26] text-white text-sm man hover:opacity-90 transition">
+                        Request Patient Gown Specifications →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="relative py-16 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff] overflow-hidden">
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4">
+
+            <!-- HEADER -->
+            <div class="max-w-3xl mb-12">
+                <p class="text-sm tracking-[0.3em] uppercase text-[#2d2a26]/60 mons mb-3">
+                    Medical Textile Range
+                </p>
+
+                <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight">
+                    Engineered for Healthcare Precision
+                </h2>
+
+                <p class="mt-5 text-sm text-[#2d2a26]/70 mons leading-relaxed">
+                    A visual overview of our core medical apparel systems designed for hospitals, clinics, and surgical
+                    environments.
+                </p>
+            </div>
+
+            <!-- IMAGE GRID -->
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <!-- IMAGE 1 -->
+                <div class="relative rounded-3xl overflow-hidden border border-neutral-200 group">
+
+                    <img src="./public/images/medical-scrubs.jpg" loading="lazy" decoding="async" fetchpriority="low"
+                        class="w-full h-[420px] object-cover transition duration-500 group-hover:scale-105"
+                        alt="Medical Scrubs">
+
+                    <!-- OVERLAY -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5">
+                        <p class="text-white text-sm tracking-wide mons">Medical Scrubs</p>
+                    </div>
+
+                </div>
+
+                <!-- IMAGE 2 -->
+                <div class="relative rounded-3xl overflow-hidden border border-neutral-200 group">
+
+                    <img src="./public/images/patient-gown.jpg" loading="lazy" decoding="async" fetchpriority="low"
+                        class="w-full h-[420px] object-cover transition duration-500 group-hover:scale-105"
+                        alt="Patient Gowns">
+
+                    <!-- OVERLAY -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5">
+                        <p class="text-white text-sm tracking-wide mons">Patient Gowns</p>
+                    </div>
+
+                </div>
+
+                <!-- IMAGE 3 -->
+                <div class="relative rounded-3xl overflow-hidden border border-neutral-200 group">
+
+                    <img src="./public/images/surgical-wear.jpg" loading="lazy" decoding="async" fetchpriority="low"
+                        class="w-full h-[420px] object-cover transition duration-500 group-hover:scale-105"
+                        alt="Surgical Wear">
+
+                    <!-- OVERLAY -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5">
+                        <p class="text-white text-sm tracking-wide mons">Surgical Wear</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="relative py-24 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff]">
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4">
+
+            <!-- HEADER -->
+            <div class="max-w-4xl mb-14">
+
+                <p class="text-sm tracking-[0.3em] uppercase text-[#2d2a26]/60 mons mb-4">
+                    Sterile & Clinical Textiles
+                </p>
+
+                <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight">
+                    Surgical Drapes & Huck Towels
+                </h2>
+            </div>
+
+            <!-- GRID -->
+            <div class="grid lg:grid-cols-2  gap-10">
+
+                <!-- CARD 1 -->
+                <div class="relative group rounded-3xl overflow-hidden">
+
+                    <!-- IMAGE -->
+                    <img src="./public/images/surgical-drapes.jpg" loading="lazy" decoding="async" fetchpriority="low"
+                        class="w-full h-[420px] object-cover transition duration-500 group-hover:scale-105"
+                        alt="Surgical Drapes">
+
+                    <!-- ALWAYS VISIBLE TITLE -->
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                        <h3 class="text-white text-xl play">
+                            Surgical Drapes
+                        </h3>
+                    </div>
+
+                    <!-- HOVER OVERLAY -->
+                    <div
+                        class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center p-10">
+
+                        <p class="text-white text-sm leading-relaxed text-center mons">
+                            High-barrier sterile fabrics designed for operating rooms and surgical procedures.
+                            Engineered for contamination control, fluid resistance, and infection prevention in critical
+                            environments.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="relative group rounded-3xl overflow-hidden">
+
+                    <!-- IMAGE -->
+                    <img src="./public/images/huck-towels.jpg"
+                        class="w-full h-[420px] object-cover transition duration-500 group-hover:scale-105"
+                        alt="Huck Towels" loading="lazy" decoding="async" fetchpriority="low">
+
+                    <!-- ALWAYS VISIBLE TITLE -->
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                        <h3 class="text-white text-xl play">
+                            Huck Towels
+                        </h3>
+                    </div>
+
+                    <!-- HOVER OVERLAY -->
+                    <div
+                        class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center p-10">
+
+                        <p class="text-white text-sm leading-relaxed text-center mons">
+                            Lint-free, high-absorbency clinical towels designed for surgical cleaning,
+                            instrument drying, and controlled sterile workflows in hospital environments.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+            <div class="mt-14 text-center">
+
+                <p class="text-sm tracking-[0.2em] uppercase text-[#2d2a26]/60 mons">
+                    Designed for Sterile Healthcare Systems • Global Export Ready Textiles
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Beautiful FAQ Section -->
+    <section class="relative py-10 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff] overflow-hidden">
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <p class="tracking-[0.3em] text-sm text-gray-500 mons mb-4">WHY LAJ</p>
+                <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight">
+                    Why Choose Laj? <br>
+                    <span class="play tcolor text-4xl md:text-5xl">Excellence in Every Detail</span>
+                </h2>
+            </div>
+
+            <!-- Accordion -->
+            <div class="space-y-5">
+
+                <!-- Item 1 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What makes LAJ Group different in hospitality textile manufacturing?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            LAJ Group focuses on end-to-end controlled textile manufacturing for hospitality clients,
+                            combining fabric engineering, institutional durability standards, and bulk supply
+                            consistency
+                            tailored for hotels, spas, and resorts.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Which hospitality products are included in LAJ’s textile range?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Our hospitality range includes bathrobes, hotel bedding sets, terry towels, spa linens,
+                            waffle weave robes, and institutional-grade textile accessories designed for commercial
+                            usage.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        How does LAJ ensure product quality for hotels and resorts?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            We implement multi-stage quality checks including GSM verification, shrinkage control,
+                            stitching durability tests, and pre-shipment inspection to ensure consistency across bulk
+                            orders.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Are LAJ bathrobes suitable for industrial laundry systems?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            Yes, all bathrobe systems are engineered for commercial laundering, designed to withstand
+                            high-temperature washes, repeated cycles, and industrial drying processes without loss of
+                            softness or structure.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        How does LAJ handle bulk supply for hospitality chains?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            We operate a structured bulk production and supply system with standardized GSM grading,
+                            color consistency controls, and phased delivery scheduling for multi-location hotel chains.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What customization options are available for hotel textiles?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            We offer customization in GSM weight, fabric type, embroidery branding, logo placement,
+                            sizing standards, and packaging tailored specifically for hotel branding requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn man flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        How does LAJ support long-term hospitality partnerships?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 mons">
+                            We provide continuous supply assurance, consistent quality benchmarking, and dedicated
+                            account-based production planning for long-term hotel and resort partnerships.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Elegant CTA Section -->
+    <section class="relative py-20 bg-white overflow-hidden">
+
+        <!-- Soft Background Accents -->
+        <div class="absolute -top-24 -right-24 w-[26rem] h-[26rem] bg-[#2d2a26]/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-[28rem] h-[28rem] bg-[#2d2a26]/5 rounded-full blur-3xl"></div>
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <div class="max-w-5xl mx-auto text-center">
+
+                <!-- Small Label -->
+                <p class="text-xs tracking-[0.35em] text-gray-400 uppercase mb-4 mons">
+                    Let’s Work Together
+                </p>
+
+                <!-- Heading -->
+                <h2 class="text-4xl md:text-5xl play text-[#2d2a26] leading-tight">
+                    Build Reliable Textile Supply<br>
+                    <span class="text-gray-500">Without Complexity</span>
+                </h2>
+
+                <!-- Description -->
+                <p class="mt-6 text-gray-500 man text-base leading-relaxed max-w-3xl mx-auto">
+                    LAJ Group connects global buyers with structured sourcing, verified production networks,
+                    and transparent export operations. From sampling to shipment, everything is managed under one
+                    accountable system.
+                </p>
+
+                <!-- Divider -->
+                <div class="w-16 h-px bg-gray-300 mx-auto mt-8 mb-10"></div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+                    <a href="./contact.html"
+                        class="px-8 py-3.5 bg-[#2d2a26] text-white text-sm mons rounded-full hover:opacity-90 transition">
+                        Start a Conversation
+                    </a>
+
+                    <a href="./about.html"
+                        class="px-8 py-3.5 border border-gray-300 text-[#2d2a26] text-sm mons rounded-full hover:bg-gray-50 transition">
+                        Explore Our Process
+                    </a>
+
+                </div>
+
+                <!-- Bottom Micro Line -->
+                <p class="mt-10 text-xs text-gray-400 tracking-[0.25em]">
+                    Sourcing • Production • Quality • Export
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="relative font-[Playfair_Display] overflow-hidden border-t border-white/10 text-white bg-[#0b0b0c]">
+
+        <!-- Dark base -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0b0b0c] via-[#0f0f10] to-[#0b0b0c]"></div>
+
+        <!-- subtle texture -->
+        <div
+            class="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[url('./public/images/pattern.png')] bg-repeat">
+        </div>
+
+        <!-- Top Strip (compact) -->
+        <div class="relative border-b border-white/10 py-3 px-6 backdrop-blur-xl bg-white/5">
+            <div
+                class="container 2xl:max-w-[1530px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+
+                <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">
+                    Faisalabad, Pakistan
+                </p>
+
+                <div class="flex items-center gap-4">
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">ISO Certified</span>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">Est. 2010</span>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <span class="text-[12px] man tracking-[0.25em] uppercase text-gray-400">18+ Countries</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main Footer (reduced spacing) -->
+        <div class="relative container 2xl:max-w-[1530px] mx-auto px-4 py-10">
+
+            <div class="grid lg:grid-cols-12 gap-10">
+
+                <!-- Brand -->
+                <div class="lg:col-span-4 flex flex-col gap-4">
+
+                    <a href="./index.html">
+                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo.png"
+                            style="  filter: invert(1);" alt="LAJ Logo"
+                            class="w-24 object-contain opacity-90 brightness-200">
+                    </a>
+
+                    <p class="text-sm text-gray-400 man leading-relaxed max-w-xs">
+                        Connecting international buyers with trusted textile manufacturers across Pakistan.
+                    </p>
+
+                    <!-- Social -->
+                    <div class="flex items-center gap-3">
+
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition">
+                            <i class="fa-brands fa-facebook-f text-[11px]"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition">
+                            <i class="fa-brands fa-instagram text-[11px]"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition">
+                            <i class="fa-brands fa-linkedin-in text-[11px]"></i>
+                        </a>
+
+
+
+                    </div>
+
+                </div>
+
+                <!-- Nav -->
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-500 mb-4">Navigate</p>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="./index.html" class="text-sm text-gray-400 hover:text-white transition">Home</a>
+                        </li>
+                        <li><a href="./about.html" class="text-sm text-gray-400 hover:text-white transition">About</a>
+                        </li>
+                        <li><a href="./services.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="./sustainability.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Sustainability</a></li>
+                        <li><a href="./contact.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-500 mb-4">Products</p>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="./hometextiles.html" class="text-sm text-gray-400 hover:text-white transition">Home
+                                Textiles</a></li>
+                        <li><a href="./hospital.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Institutional
+                                Textiles</a></li>
+                        <li><a href="./healthcare.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Healthcare
+                                Textiles</a></li>
+                        <li><a href="./terrytowels.html" class="text-sm text-gray-400 hover:text-white transition">Bath
+                                Linen</a>
+                        </li>
+                        <li><a href="./apparels.html"
+                                class="text-sm text-gray-400 hover:text-white transition">Apparels</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="lg:col-span-2">
+                    <p class="text-[12px] man tracking-[0.25em] uppercase text-gray-500 mb-4">Get In Touch</p>
+
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a href="tel:+923016097666" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Phone</span>
+                                <span class="text-xs text-gray-300 hover:text-white transition">+92 301 6097666</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:info@lajhometextile.com" class="flex flex-col">
+                                <span class="text-[10px] text-gray-500">Email</span>
+                                <span
+                                    class="text-xs text-gray-300 hover:text-white transition">info@lajhometextile.com</span>
+                            </a>
+                        </li>
+
+                        <li class="flex flex-col">
+                            <span class="text-[10px] text-gray-500">Location</span>
+                            <span class="text-xs text-gray-300">Faisalabad, Pakistan</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar (compact) -->
+            <div
+                class="mt-10 border-t border-white/10 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+
+                <p class="text-[11px] text-gray-500">© 2026 LAJ. All rights reserved.</p>
+
+                <div class="flex items-center gap-4">
+                    <a href="./terms.html" class="text-[11px] text-gray-500 hover:text-white transition">Terms</a>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <a href="./privacy.html" class="text-[11px] text-gray-500 hover:text-white transition">Privacy</a>
+                </div>
+
+                <p class="text-[11px] text-gray-500">
+                    Developed by
+                    <a href="https://wa.me/923224066958" target="_blank"
+                        class="text-gray-300 hover:text-white transition">
+                        MAC
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script defer src="./src/js/index.js"></script>
+    <script defer src="./src/js/gsap.js"></script>
+
+
+
+</body>
+
+
+</html>
