@@ -966,6 +966,9 @@ input[type="range"]::-ms-fill-lower {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+.mt-7 {
+  margin-top: 1.75rem;
+}
 .block {
   display: block;
 }
@@ -1142,6 +1145,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .w-\[24rem\] {
   width: 24rem;
+}
+.w-6 {
+  width: 1.5rem;
 }
 .min-w-full {
   min-width: 100%;
